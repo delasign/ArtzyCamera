@@ -31,6 +31,14 @@
 		BA82E26421B5D4FC002CEFE4 /* FadeIn.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E25C21B5D4FC002CEFE4 /* FadeIn.metal */; };
 		BA82E26A21B5D63E002CEFE4 /* ShaderFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E26921B5D63E002CEFE4 /* ShaderFunctionality.swift */; };
 		BA82E26D21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E26C21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift */; };
+		BA82E26F21B5DC9E002CEFE4 /* Color.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E26E21B5DC9E002CEFE4 /* Color.metal */; };
+		BA82E27721B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27521B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift */; };
+		BA82E27821B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27621B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift */; };
+		BA82E27B21B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27921B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift */; };
+		BA82E27C21B5DD56002CEFE4 /* ArtzyCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27A21B5DD56002CEFE4 /* ArtzyCameraButton.swift */; };
+		BA82E28221B5DD94002CEFE4 /* ResetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28121B5DD94002CEFE4 /* ResetButton.swift */; };
+		BA82E28421B5DEC6002CEFE4 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28321B5DEC6002CEFE4 /* PreviewView.swift */; };
+		BA82E28721B5DF80002CEFE4 /* AppVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28621B5DF80002CEFE4 /* AppVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +89,14 @@
 		BA82E25C21B5D4FC002CEFE4 /* FadeIn.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = FadeIn.metal; sourceTree = "<group>"; };
 		BA82E26921B5D63E002CEFE4 /* ShaderFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderFunctionality.swift; sourceTree = "<group>"; };
 		BA82E26C21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceOfArtzyVariables.swift; sourceTree = "<group>"; };
+		BA82E26E21B5DC9E002CEFE4 /* Color.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Color.metal; sourceTree = "<group>"; };
+		BA82E27521B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHUDViewControllerViewController.swift; sourceTree = "<group>"; };
+		BA82E27621B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHUDViewControllerReplayKitFunctionality.swift; sourceTree = "<group>"; };
+		BA82E27921B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHUDPhotoFunctionality.swift; sourceTree = "<group>"; };
+		BA82E27A21B5DD56002CEFE4 /* ArtzyCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtzyCameraButton.swift; sourceTree = "<group>"; };
+		BA82E28121B5DD94002CEFE4 /* ResetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetButton.swift; sourceTree = "<group>"; };
+		BA82E28321B5DEC6002CEFE4 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		BA82E28621B5DF80002CEFE4 /* AppVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVariables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +147,8 @@
 		BA82E20421B5C85D002CEFE4 /* ArtzyCamera */ = {
 			isa = PBXGroup;
 			children = (
+				BA82E28521B5DF73002CEFE4 /* Variables */,
+				BA82E27021B5DCCB002CEFE4 /* HUD */,
 				BA82E23521B5C989002CEFE4 /* PieceOfArtzy */,
 				BA82E20521B5C85D002CEFE4 /* AppDelegate.swift */,
 				BA82E20721B5C85D002CEFE4 /* art.scnassets */,
@@ -235,6 +253,7 @@
 		BA82E26721B5D57E002CEFE4 /* Standard */ = {
 			isa = PBXGroup;
 			children = (
+				BA82E26E21B5DC9E002CEFE4 /* Color.metal */,
 				BA82E25821B5D4FB002CEFE4 /* Texture.metal */,
 			);
 			path = Standard;
@@ -252,6 +271,59 @@
 			isa = PBXGroup;
 			children = (
 				BA82E26C21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift */,
+			);
+			path = Variables;
+			sourceTree = "<group>";
+		};
+		BA82E27021B5DCCB002CEFE4 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E27621B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift */,
+				BA82E27521B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift */,
+				BA82E27921B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift */,
+				BA82E27221B5DCF7002CEFE4 /* Buttons */,
+				BA82E27121B5DCE6002CEFE4 /* Preview */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		BA82E27121B5DCE6002CEFE4 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E28321B5DEC6002CEFE4 /* PreviewView.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		BA82E27221B5DCF7002CEFE4 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E27421B5DD1A002CEFE4 /* Camera */,
+				BA82E27321B5DD06002CEFE4 /* Reset */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		BA82E27321B5DD06002CEFE4 /* Reset */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E28121B5DD94002CEFE4 /* ResetButton.swift */,
+			);
+			path = Reset;
+			sourceTree = "<group>";
+		};
+		BA82E27421B5DD1A002CEFE4 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E27A21B5DD56002CEFE4 /* ArtzyCameraButton.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		BA82E28521B5DF73002CEFE4 /* Variables */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E28621B5DF80002CEFE4 /* AppVariables.swift */,
 			);
 			path = Variables;
 			sourceTree = "<group>";
@@ -391,21 +463,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA82E25421B5D13C002CEFE4 /* GlowRedRender.metal in Sources */,
+				BA82E28421B5DEC6002CEFE4 /* PreviewView.swift in Sources */,
 				BA82E25321B5D13C002CEFE4 /* GlowBlueRender.metal in Sources */,
+				BA82E28221B5DD94002CEFE4 /* ResetButton.swift in Sources */,
+				BA82E27721B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift in Sources */,
 				BA82E24321B5CED9002CEFE4 /* Glow.metal in Sources */,
 				BA82E26321B5D4FC002CEFE4 /* TimedStrokeTexture.metal in Sources */,
+				BA82E27C21B5DD56002CEFE4 /* ArtzyCameraButton.swift in Sources */,
 				BA82E26D21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift in Sources */,
 				BA82E25E21B5D4FC002CEFE4 /* FadeInTexture.metal in Sources */,
 				BA82E26121B5D4FC002CEFE4 /* BackwardsTimedStrokeTexture.metal in Sources */,
+				BA82E27821B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift in Sources */,
 				BA82E26021B5D4FC002CEFE4 /* Texture.metal in Sources */,
 				BA82E26421B5D4FC002CEFE4 /* FadeIn.metal in Sources */,
 				BA82E26A21B5D63E002CEFE4 /* ShaderFunctionality.swift in Sources */,
 				BA82E26221B5D4FC002CEFE4 /* TimedStroke.metal in Sources */,
 				BA82E25F21B5D4FC002CEFE4 /* BackwardStroke.metal in Sources */,
+				BA82E27B21B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift in Sources */,
 				BA82E23B21B5CA88002CEFE4 /* PieceOfArtzy.swift in Sources */,
 				BA82E20A21B5C85D002CEFE4 /* ViewController.swift in Sources */,
 				BA82E25D21B5D4FC002CEFE4 /* Stroke.metal in Sources */,
 				BA82E20621B5C85D002CEFE4 /* AppDelegate.swift in Sources */,
+				BA82E26F21B5DC9E002CEFE4 /* Color.metal in Sources */,
+				BA82E28721B5DF80002CEFE4 /* AppVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

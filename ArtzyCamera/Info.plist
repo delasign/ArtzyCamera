@@ -21,7 +21,15 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>This application will use the camera for Augmented Reality.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This application will use location for Augmented Reality.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This application will use the camera to record Augmented Reality.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This application will use the Photo Library to save media.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This application will use the Photo Library to save media.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

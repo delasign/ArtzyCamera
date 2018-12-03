@@ -10,18 +10,19 @@ import UIKit
 import SceneKit
 import ARKit
 import Photos
+import AVKit
 
 
-protocol ArtzyViewControllerDelegate {
+protocol ViewControllerDelegate {
     func resetTracking();
 }
 
 
-class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
+class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, ViewControllerDelegate {
     
     public var activeArtzyPieces:[NSMutableDictionary] = [NSMutableDictionary]();
     
-    
+    var HUD:UIWindow!
     @IBOutlet var sceneView: ARSCNView!
     
     /// A serial queue for thread safety when modifying the SceneKit node graph.
@@ -42,10 +43,48 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         super.viewDidLoad()
         
         print("VIEW DID LOAD");
+        //Instantiate variables
+        screenWidth = self.view.frame.width;
+        screenHeight = self.view.frame.height;
+        instantiateArtzyVariables();
         
         // Set the view's delegate
         sceneView.delegate = self
         sceneView.session.delegate = self
+        
+        self.HUD = UIWindow(frame: self.view.frame);
+        
+        let cameraHUD:CameraHUDViewController = CameraHUDViewController();
+        cameraHUD.sceneView = self.sceneView;
+        cameraHUD.viewControllerDelegate = self;
+        self.HUD.rootViewController = cameraHUD;
+        self.HUD.rootViewController!.view.alpha = 1;
+        self.HUD.makeKeyAndVisible()
+        
+        
+        //Photos
+        let photos = PHPhotoLibrary.authorizationStatus()
+        if photos == .notDetermined {
+            PHPhotoLibrary.requestAuthorization({status in
+                if status == .authorized{
+                    print("AUthorized");
+                } else {
+                    print("status ", PHPhotoLibrary.authorizationStatus() );
+                }
+            })
+        }
+        
+        AVAudioSession.sharedInstance().requestRecordPermission () {
+            [unowned self] allowed in
+            if allowed {
+                // Microphone allowed, do what you like!
+                
+            } else {
+                // User denied microphone. Tell them off!
+                
+            }
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -91,21 +130,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         configuration.detectionImages = referenceImages
         session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
         
-        // Prepare Recorder
-        //        self.recorder?.prepare(configuration)
-        
         // REMOVE ALL OBJECTS
         sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
             node.removeFromParentNode();
         }
-        
-        //        sceneView.debugOptions = [.showBoundingBoxes];
-        
-        let plane:SCNPlane = SCNPlane(width: 0, height: 0);
-        let centerNode:SCNNode = SCNNode(geometry: plane);
-        centerNode.position = SCNVector3.init(0, 0, 0);
-        centerNode.name = "scene_center";
-        sceneView.scene.rootNode.addChildNode(centerNode);
     }
     
     // MARK: - ARSCNViewDelegate (Image detection results)
@@ -138,13 +166,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         }
     }
     
-    var prevPosition:SCNVector3?
-    
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        
-//        let randomFloat:Float = Float(arc4random());
-//        print("RANDOM FLOAT : ", randomFloat)
         self.sceneView.technique?.setObject(NSNumber(value: 1), forKeyedSubscript: "customVariableSymbol" as NSCopying)
+        (self.HUD.rootViewController as! CameraHUDViewController).didUpdateAtTime(time:time);
     }
     
     var imageHighlightAction: SCNAction {
