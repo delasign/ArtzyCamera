@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA82E20621B5C85D002CEFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E20521B5C85D002CEFE4 /* AppDelegate.swift */; };
+		BA82E20821B5C85D002CEFE4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82E20721B5C85D002CEFE4 /* art.scnassets */; };
+		BA82E20A21B5C85D002CEFE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E20921B5C85D002CEFE4 /* ViewController.swift */; };
+		BA82E20D21B5C85D002CEFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA82E20B21B5C85D002CEFE4 /* Main.storyboard */; };
+		BA82E20F21B5C860002CEFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82E20E21B5C860002CEFE4 /* Assets.xcassets */; };
+		BA82E21221B5C860002CEFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA82E21021B5C860002CEFE4 /* LaunchScreen.storyboard */; };
+		BA82E21D21B5C860002CEFE4 /* ArtzyCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E21C21B5C860002CEFE4 /* ArtzyCameraTests.swift */; };
+		BA82E22821B5C860002CEFE4 /* ArtzyCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E22721B5C860002CEFE4 /* ArtzyCameraUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA82E21921B5C860002CEFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA82E1FA21B5C85D002CEFE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA82E20121B5C85D002CEFE4;
+			remoteInfo = ArtzyCamera;
+		};
+		BA82E22421B5C860002CEFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA82E1FA21B5C85D002CEFE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA82E20121B5C85D002CEFE4;
+			remoteInfo = ArtzyCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA82E20221B5C85D002CEFE4 /* ArtzyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtzyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA82E20521B5C85D002CEFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA82E20721B5C85D002CEFE4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		BA82E20921B5C85D002CEFE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA82E20C21B5C85D002CEFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA82E20E21B5C860002CEFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA82E21121B5C860002CEFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA82E21321B5C860002CEFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA82E21821B5C860002CEFE4 /* ArtzyCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtzyCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA82E21C21B5C860002CEFE4 /* ArtzyCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtzyCameraTests.swift; sourceTree = "<group>"; };
+		BA82E21E21B5C860002CEFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA82E22321B5C860002CEFE4 /* ArtzyCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtzyCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA82E22721B5C860002CEFE4 /* ArtzyCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtzyCameraUITests.swift; sourceTree = "<group>"; };
+		BA82E22921B5C860002CEFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA82E1FF21B5C85D002CEFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA82E21521B5C860002CEFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA82E22021B5C860002CEFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA82E1F921B5C85D002CEFE4 = {
+			isa = PBXGroup;
+			children = (
+				BA82E20421B5C85D002CEFE4 /* ArtzyCamera */,
+				BA82E21B21B5C860002CEFE4 /* ArtzyCameraTests */,
+				BA82E22621B5C860002CEFE4 /* ArtzyCameraUITests */,
+				BA82E20321B5C85D002CEFE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA82E20321B5C85D002CEFE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E20221B5C85D002CEFE4 /* ArtzyCamera.app */,
+				BA82E21821B5C860002CEFE4 /* ArtzyCameraTests.xctest */,
+				BA82E22321B5C860002CEFE4 /* ArtzyCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA82E20421B5C85D002CEFE4 /* ArtzyCamera */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E20521B5C85D002CEFE4 /* AppDelegate.swift */,
+				BA82E20721B5C85D002CEFE4 /* art.scnassets */,
+				BA82E20921B5C85D002CEFE4 /* ViewController.swift */,
+				BA82E20B21B5C85D002CEFE4 /* Main.storyboard */,
+				BA82E20E21B5C860002CEFE4 /* Assets.xcassets */,
+				BA82E21021B5C860002CEFE4 /* LaunchScreen.storyboard */,
+				BA82E21321B5C860002CEFE4 /* Info.plist */,
+			);
+			path = ArtzyCamera;
+			sourceTree = "<group>";
+		};
+		BA82E21B21B5C860002CEFE4 /* ArtzyCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E21C21B5C860002CEFE4 /* ArtzyCameraTests.swift */,
+				BA82E21E21B5C860002CEFE4 /* Info.plist */,
+			);
+			path = ArtzyCameraTests;
+			sourceTree = "<group>";
+		};
+		BA82E22621B5C860002CEFE4 /* ArtzyCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E22721B5C860002CEFE4 /* ArtzyCameraUITests.swift */,
+				BA82E22921B5C860002CEFE4 /* Info.plist */,
+			);
+			path = ArtzyCameraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA82E20121B5C85D002CEFE4 /* ArtzyCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA82E22C21B5C860002CEFE4 /* Build configuration list for PBXNativeTarget "ArtzyCamera" */;
+			buildPhases = (
+				BA82E1FE21B5C85D002CEFE4 /* Sources */,
+				BA82E1FF21B5C85D002CEFE4 /* Frameworks */,
+				BA82E20021B5C85D002CEFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtzyCamera;
+			productName = ArtzyCamera;
+			productReference = BA82E20221B5C85D002CEFE4 /* ArtzyCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA82E21721B5C860002CEFE4 /* ArtzyCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA82E22F21B5C860002CEFE4 /* Build configuration list for PBXNativeTarget "ArtzyCameraTests" */;
+			buildPhases = (
+				BA82E21421B5C860002CEFE4 /* Sources */,
+				BA82E21521B5C860002CEFE4 /* Frameworks */,
+				BA82E21621B5C860002CEFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA82E21A21B5C860002CEFE4 /* PBXTargetDependency */,
+			);
+			name = ArtzyCameraTests;
+			productName = ArtzyCameraTests;
+			productReference = BA82E21821B5C860002CEFE4 /* ArtzyCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA82E22221B5C860002CEFE4 /* ArtzyCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA82E23221B5C860002CEFE4 /* Build configuration list for PBXNativeTarget "ArtzyCameraUITests" */;
+			buildPhases = (
+				BA82E21F21B5C860002CEFE4 /* Sources */,
+				BA82E22021B5C860002CEFE4 /* Frameworks */,
+				BA82E22121B5C860002CEFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA82E22521B5C860002CEFE4 /* PBXTargetDependency */,
+			);
+			name = ArtzyCameraUITests;
+			productName = ArtzyCameraUITests;
+			productReference = BA82E22321B5C860002CEFE4 /* ArtzyCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA82E1FA21B5C85D002CEFE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Delasign;
+				TargetAttributes = {
+					BA82E20121B5C85D002CEFE4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BA82E21721B5C860002CEFE4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BA82E20121B5C85D002CEFE4;
+					};
+					BA82E22221B5C860002CEFE4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BA82E20121B5C85D002CEFE4;
+					};
+				};
+			};
+			buildConfigurationList = BA82E1FD21B5C85D002CEFE4 /* Build configuration list for PBXProject "ArtzyCamera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA82E1F921B5C85D002CEFE4;
+			productRefGroup = BA82E20321B5C85D002CEFE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA82E20121B5C85D002CEFE4 /* ArtzyCamera */,
+				BA82E21721B5C860002CEFE4 /* ArtzyCameraTests */,
+				BA82E22221B5C860002CEFE4 /* ArtzyCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA82E20021B5C85D002CEFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA82E20821B5C85D002CEFE4 /* art.scnassets in Resources */,
+				BA82E21221B5C860002CEFE4 /* LaunchScreen.storyboard in Resources */,
+				BA82E20F21B5C860002CEFE4 /* Assets.xcassets in Resources */,
+				BA82E20D21B5C85D002CEFE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA82E21621B5C860002CEFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA82E22121B5C860002CEFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA82E1FE21B5C85D002CEFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA82E20A21B5C85D002CEFE4 /* ViewController.swift in Sources */,
+				BA82E20621B5C85D002CEFE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA82E21421B5C860002CEFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA82E21D21B5C860002CEFE4 /* ArtzyCameraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA82E21F21B5C860002CEFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA82E22821B5C860002CEFE4 /* ArtzyCameraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA82E21A21B5C860002CEFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA82E20121B5C85D002CEFE4 /* ArtzyCamera */;
+			targetProxy = BA82E21921B5C860002CEFE4 /* PBXContainerItemProxy */;
+		};
+		BA82E22521B5C860002CEFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA82E20121B5C85D002CEFE4 /* ArtzyCamera */;
+			targetProxy = BA82E22421B5C860002CEFE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA82E20B21B5C85D002CEFE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA82E20C21B5C85D002CEFE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA82E21021B5C860002CEFE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA82E21121B5C860002CEFE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA82E22A21B5C860002CEFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA82E22B21B5C860002CEFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA82E22D21B5C860002CEFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22HD58B26L;
+				INFOPLIST_FILE = ArtzyCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Delasign.ArtzyCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA82E22E21B5C860002CEFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22HD58B26L;
+				INFOPLIST_FILE = ArtzyCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Delasign.ArtzyCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA82E23021B5C860002CEFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22HD58B26L;
+				INFOPLIST_FILE = ArtzyCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Delasign.ArtzyCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtzyCamera.app/ArtzyCamera";
+			};
+			name = Debug;
+		};
+		BA82E23121B5C860002CEFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22HD58B26L;
+				INFOPLIST_FILE = ArtzyCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Delasign.ArtzyCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtzyCamera.app/ArtzyCamera";
+			};
+			name = Release;
+		};
+		BA82E23321B5C860002CEFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22HD58B26L;
+				INFOPLIST_FILE = ArtzyCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Delasign.ArtzyCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArtzyCamera;
+			};
+			name = Debug;
+		};
+		BA82E23421B5C860002CEFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22HD58B26L;
+				INFOPLIST_FILE = ArtzyCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Delasign.ArtzyCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArtzyCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA82E1FD21B5C85D002CEFE4 /* Build configuration list for PBXProject "ArtzyCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA82E22A21B5C860002CEFE4 /* Debug */,
+				BA82E22B21B5C860002CEFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA82E22C21B5C860002CEFE4 /* Build configuration list for PBXNativeTarget "ArtzyCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA82E22D21B5C860002CEFE4 /* Debug */,
+				BA82E22E21B5C860002CEFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA82E22F21B5C860002CEFE4 /* Build configuration list for PBXNativeTarget "ArtzyCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA82E23021B5C860002CEFE4 /* Debug */,
+				BA82E23121B5C860002CEFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA82E23221B5C860002CEFE4 /* Build configuration list for PBXNativeTarget "ArtzyCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA82E23321B5C860002CEFE4 /* Debug */,
+				BA82E23421B5C860002CEFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA82E1FA21B5C85D002CEFE4 /* Project object */;
+}
