@@ -28,8 +28,8 @@ class PreviewView: UIView {
     private var playerLayer:AVPlayerLayer?
     private var videoURL:URL?
     
-    private var saveButton:UIButton = UIButton();
-    private var cancelButton:UIButton = UIButton();
+    private var saveButton:SaveButton = SaveButton();
+    private var cancelButton:CancelButton = CancelButton();
     
     override init(frame: CGRect) {
         super.init(frame: frame);
@@ -39,16 +39,16 @@ class PreviewView: UIView {
         self.imageView.frame = self.frame;
         
         // Save button
-        let saveButtonWidth:CGFloat = screenWidth/4;
-        let saveButtonHeight:CGFloat = screenHeight/15;
-        self.saveButton.frame = CGRect(x: screenWidth - saveButtonWidth - kArtzyHUDButtonGap/2, y: (screenHeight*0.7-saveButtonHeight), width: saveButtonWidth, height: saveButtonHeight);
-        self.saveButton.setAttributedTitle(self.generateAttributedTitle(string: "save", size:18), for: .normal);
+//        let saveButtonWidth:CGFloat = screenWidth/4;
+//        let saveButtonHeight:CGFloat = screenHeight/15;
+//        self.saveButton.frame = CGRect(x: screenWidth - saveButtonWidth - kArtzyHUDButtonGap/2, y: (screenHeight*0.7-saveButtonHeight), width: saveButtonWidth, height: saveButtonHeight);
+//        self.saveButton.setAttributedTitle(self.generateAttributedTitle(string: "save", size:18), for: .normal);
         self.saveButton.addTarget(self, action: #selector(self.saveButtonPressed), for: .touchUpInside);
         
         // Cancel button
         // SAME AS RESET BUTTON
-        self.cancelButton.frame = CGRect(x: kArtzyHUDButtonGap/2, y:kArtzyResetButtonMinY, width: kArtzyResetButtonDimension*1.25, height: kArtzyResetButtonDimension);
-        self.cancelButton.setAttributedTitle(self.generateAttributedTitle(string: "cancel", size:18), for: .normal);
+//        self.cancelButton.frame = CGRect(x: kArtzyHUDButtonGap/2, y:kArtzyResetButtonMinY, width: kArtzyResetButtonDimension*1.25, height: kArtzyResetButtonDimension);
+//        self.cancelButton.setAttributedTitle(self.generateAttributedTitle(string: "cancel", size:18), for: .normal);
         self.cancelButton.addTarget(self, action: #selector(self.cancelButtonPressed), for: .touchUpInside);
         
         // Loop Observer

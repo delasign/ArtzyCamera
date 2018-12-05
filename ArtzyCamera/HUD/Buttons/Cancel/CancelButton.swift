@@ -1,31 +1,31 @@
 //
-//  ResetButton.swift
-//  Artzy
+//  CancelButton.swift
+//  ArtzyCamera
 //
-//  Created by Oscar De la Hera Gomez on 9/15/18.
+//  Created by Oscar De la Hera Gomez on 12/5/18.
 //  Copyright © 2018 Delasign. All rights reserved.
 //
 
 import UIKit
 
-class ResetButton: UIButton {
+class CancelButton: UIButton {
     
     public var viewControllerDelegate:ViewControllerDelegate?;
     public var cameraHUDDelegate:CameraHUDDelegate?;
     
     private var label:UILabel = UILabel();
-
+    
     init() {
         // Initialize the view to fit the responsive design presented in the deck and sketch file
         // Instatiate Camera Circle
         
-        super.init(frame: CGRect(x: screenWidth - kArtzyResetButtonDimension - kArtzyHUDButtonGap/2, y:kArtzyResetButtonMinY, width: kArtzyResetButtonDimension, height: kArtzyResetButtonDimension));
-//        self.setAttributedTitle(self.generateAttributedTitle(string: "reset", size: 18), for: .normal);
+        super.init(frame: CGRect(x: kArtzyHUDButtonGap/2, y:kArtzyResetButtonMinY, width: kArtzyResetButtonDimension, height: kArtzyResetButtonDimension));
         self.layer.cornerRadius = 6;
         
-        self.label.attributedText = self.generateAttributedTitle(string: "reset", size: 18);
+        self.label.attributedText = self.generateAttributedTitle(string: "cancel", size: 18);
         self.label.sizeToFit();
-        self.label.frame = CGRect(x: 0, y: kArtzMinYLabelLine-self.frame.minY, width: self.frame.width, height: self.label.frame.height);
+        self.label.frame = CGRect(x: 0, y: kArtzMinYLabelLine-self.frame.minY, width: self.label.frame.width, height: self.label.frame.height);
+        
         self.addSubview(self.label);
     }
     
@@ -41,11 +41,4 @@ class ResetButton: UIButton {
     func generateAttributedTitle(string:String, size:CGFloat) -> NSMutableAttributedString{
         return NSMutableAttributedString(string: string, attributes:  [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: size)]);
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        DispatchQueue.global().async { [weak self] in
-            self?.cameraHUDDelegate?.resetCameraHUD();
-        }
-    }
-    
 }

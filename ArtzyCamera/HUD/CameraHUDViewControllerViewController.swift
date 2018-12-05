@@ -88,7 +88,7 @@ class CameraHUDViewController: UIViewController, CameraHUDDelegate, AVCaptureAud
             self.previewView = PreviewView(frame: self.view.frame);
             self.previewView.cameraHUDDelegate = self;
             
-            artzyNotificationView = NotificationView(frame: CGRect(x: screenWidth*0.25, y: kArtzyResetButtonMinY, width: screenWidth*0.5, height: screenHeight*0.2));
+            artzyNotificationView = NotificationView(frame: CGRect(x: screenWidth*0.25, y: 0, width: screenWidth*0.5, height: screenHeight*0.2));
             self.view.addSubview(artzyNotificationView)
             
             

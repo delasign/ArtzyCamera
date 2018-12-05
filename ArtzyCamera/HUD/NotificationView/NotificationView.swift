@@ -32,7 +32,7 @@ class NotificationView: UIView {
         artzyNotificationBlimp = NotificationBlimp(frame: kArtzyBlimpBaseRect);
         self.addSubview(artzyNotificationBlimp)
         
-        self.notificationLabel.frame = self.bounds;
+        self.notificationLabel.frame = kArtzyNotificationLabelRect;
         self.updateNotification(title: self.title, style:.searching);
         
         self.addSubview(self.notificationLabel);
@@ -57,9 +57,11 @@ class NotificationView: UIView {
         self.notificationLabel.attributedText = self.generateAttributedTitle(string: self.title, size: 18)
         self.notificationLabel.numberOfLines = 3
         
-        self.notificationLabel.textAlignment = .left;
-        self.notificationLabel.frame = CGRect(x: kArtzyBlimpDimension+kArtzyHUDButtonGap, y: kArtzyResetButtonMinY*0.33, width: self.bounds.width-kArtzyBlimpDimension-kArtzyHUDButtonGap, height: self.notificationLabel.frame.height)
+        self.notificationLabel.textAlignment = .center;
+        self.notificationLabel.frame = kArtzyNotificationLabelRect
         self.notificationLabel.sizeToFit();
+        
+        self.notificationLabel.frame = CGRect(x: kArtzyNotificationLabelRect.minX, y: kArtzyNotificationLabelRect.minY, width: kArtzyNotificationLabelRect.width, height: self.notificationLabel.frame.height)
         
         artzyNotificationBlimp.updateNotificationStyle(style:style);
     }
@@ -70,9 +72,10 @@ class NotificationView: UIView {
         self.notificationLabel.attributedText = self.generateAttributedTitle(string: self.title, size: 18)
         self.notificationLabel.numberOfLines = 3
         
-        self.notificationLabel.textAlignment = .left;
-        self.notificationLabel.frame = CGRect(x: kArtzyBlimpDimension+kArtzyHUDButtonGap, y: kArtzyResetButtonMinY*0.33, width: self.bounds.width-kArtzyBlimpDimension-kArtzyHUDButtonGap, height: self.notificationLabel.frame.height)
+        self.notificationLabel.textAlignment = .center;
+        self.notificationLabel.frame = kArtzyNotificationLabelRect
         self.notificationLabel.sizeToFit();
+        self.notificationLabel.frame = CGRect(x: kArtzyNotificationLabelRect.minX, y: kArtzyNotificationLabelRect.minY, width: kArtzyNotificationLabelRect.width, height: self.notificationLabel.frame.height)
         
         artzyNotificationBlimp.updateNotificationStyle(style:.previous);
     }

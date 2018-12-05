@@ -44,6 +44,8 @@
 		BA82E29021B736BE002CEFE4 /* HUDAudioFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28F21B736BE002CEFE4 /* HUDAudioFunc.swift */; };
 		BA82E29221B73725002CEFE4 /* HUDRecordingFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E29121B73725002CEFE4 /* HUDRecordingFunc.swift */; };
 		BA82E29421B75F28002CEFE4 /* NotificationBlimp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E29321B75F28002CEFE4 /* NotificationBlimp.swift */; };
+		BA82E2D821B85B0D002CEFE4 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E2D721B85B0D002CEFE4 /* CancelButton.swift */; };
+		BA82E2DA21B85DBA002CEFE4 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E2D921B85DBA002CEFE4 /* SaveButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		BA82E28F21B736BE002CEFE4 /* HUDAudioFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDAudioFunc.swift; sourceTree = "<group>"; };
 		BA82E29121B73725002CEFE4 /* HUDRecordingFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDRecordingFunc.swift; sourceTree = "<group>"; };
 		BA82E29321B75F28002CEFE4 /* NotificationBlimp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBlimp.swift; sourceTree = "<group>"; };
+		BA82E2D721B85B0D002CEFE4 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
+		BA82E2D921B85DBA002CEFE4 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +313,8 @@
 		BA82E27221B5DCF7002CEFE4 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				BA82E2D621B85ABA002CEFE4 /* Save */,
+				BA82E2D521B85AB0002CEFE4 /* Cancel */,
 				BA82E27421B5DD1A002CEFE4 /* Camera */,
 				BA82E27321B5DD06002CEFE4 /* Reset */,
 			);
@@ -365,6 +371,22 @@
 				BA82E28D21B735C9002CEFE4 /* BaseView.swift */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		BA82E2D521B85AB0002CEFE4 /* Cancel */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E2D721B85B0D002CEFE4 /* CancelButton.swift */,
+			);
+			path = Cancel;
+			sourceTree = "<group>";
+		};
+		BA82E2D621B85ABA002CEFE4 /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E2D921B85DBA002CEFE4 /* SaveButton.swift */,
+			);
+			path = Save;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +536,7 @@
 				BA82E28B21B6ED83002CEFE4 /* NotificationView.swift in Sources */,
 				BA82E26D21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift in Sources */,
 				BA82E25E21B5D4FC002CEFE4 /* FadeInTexture.metal in Sources */,
+				BA82E2DA21B85DBA002CEFE4 /* SaveButton.swift in Sources */,
 				BA82E26121B5D4FC002CEFE4 /* BackwardsTimedStrokeTexture.metal in Sources */,
 				BA82E27821B5DD41002CEFE4 /* HUDVideoFunc.swift in Sources */,
 				BA82E29421B75F28002CEFE4 /* NotificationBlimp.swift in Sources */,
@@ -530,6 +553,7 @@
 				BA82E20621B5C85D002CEFE4 /* AppDelegate.swift in Sources */,
 				BA82E26F21B5DC9E002CEFE4 /* Color.metal in Sources */,
 				BA82E28721B5DF80002CEFE4 /* AppVariables.swift in Sources */,
+				BA82E2D821B85B0D002CEFE4 /* CancelButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
