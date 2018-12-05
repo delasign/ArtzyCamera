@@ -17,12 +17,10 @@ class ResetButton: UIButton {
         // Initialize the view to fit the responsive design presented in the deck and sketch file
         // Instatiate Camera Circle
         
-        var fraction:CGFloat = 0.6;
+        super.init(frame: CGRect(x: screenWidth - kArtzyResetButtonDimension - kArtzyHUDButtonGap/2, y:kArtzyResetButtonMinY, width: kArtzyResetButtonDimension, height: kArtzyResetButtonDimension));
         
-        super.init(frame: CGRect(x: screenWidth - kArtzyCameraButtonDimension*fraction - kArtzyHUDButtonGap/2, y:kArtzyHUDButtonGap/2, width: kArtzyCameraButtonDimension*fraction, height: kArtzyCameraButtonDimension*fraction));
-        
-        self.backgroundColor = UIColor.white.withAlphaComponent(0.6);
-        self.setAttributedTitle(self.generateAttributedTitle(string: "RESET", size: 12), for: .normal);
+//        self.backgroundColor = UIColor.white.withAlphaComponent(0.6);
+        self.setAttributedTitle(self.generateAttributedTitle(string: "reset", size: 18), for: .normal);
 //        self.setTitle("RESET", for: .normal)
         
 //        self.setBackgroundImage(UIImage(named:"resetButton"), for: .normal);
@@ -41,7 +39,7 @@ class ResetButton: UIButton {
     }
     
     func generateAttributedTitle(string:String, size:CGFloat) -> NSMutableAttributedString{
-        return NSMutableAttributedString(string: string, attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: size)]);
+        return NSMutableAttributedString(string: string, attributes:  [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: size)]);
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

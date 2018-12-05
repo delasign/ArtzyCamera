@@ -49,8 +49,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
         instantiateArtzyVariables();
         
         // Set the view's delegate
-        sceneView.delegate = self
-        sceneView.session.delegate = self
+        self.sceneView.delegate = self
+        self.sceneView.session.delegate = self
+//        self.sceneView.rendersContinuously = true;
         
         self.HUD = UIWindow(frame: self.view.frame);
         
@@ -60,6 +61,15 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
         self.HUD.rootViewController = cameraHUD;
         self.HUD.rootViewController!.view.alpha = 1;
         self.HUD.makeKeyAndVisible()
+        
+        if let camera = self.sceneView.pointOfView?.camera {
+//            camera.wantsHDR = true
+//            camera.wantsExposureAdaptation = true
+//            camera.whitePoint = 1.0
+//            camera.exposureOffset = 1
+//            camera.minimumExposure = 1
+//            camera.maximumExposure = 1
+        }
         
         
         //Photos
@@ -103,7 +113,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
         super.viewWillDisappear(animated)
         
         // Pause the view's session
-        sceneView.session.pause()
+        self.sceneView.session.pause()
     }
     
     override func didReceiveMemoryWarning() {
@@ -131,7 +141,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
         session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
         
         // REMOVE ALL OBJECTS
-        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+        self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
             node.removeFromParentNode();
         }
     }
@@ -155,7 +165,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
 
             let ArtzyPieces:NSMutableDictionary = [
                 "node" : node,
-                "artzy" : pieceOfArtzy,
+                "pieceOfArtzy" : pieceOfArtzy,
                 "withinPointOfView": false,
                 "distanceToObject": 0
             ]
@@ -168,7 +178,16 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         self.sceneView.technique?.setObject(NSNumber(value: 1), forKeyedSubscript: "customVariableSymbol" as NSCopying)
-        (self.HUD.rootViewController as! CameraHUDViewController).didUpdateAtTime(time:time);
+        DispatchQueue.main.async {
+            (self.HUD.rootViewController as! CameraHUDViewController).didUpdateAtTime(time:time);
+            
+            for ArtzyDict in self.activeArtzyPieces {
+                let pieceOfArtzy:PieceOfArtzy = ArtzyDict.value(forKey: "pieceOfArtzy") as! PieceOfArtzy;
+                pieceOfArtzy.didUpdateAtTime();
+            }
+            
+            
+        }
     }
     
     var imageHighlightAction: SCNAction {

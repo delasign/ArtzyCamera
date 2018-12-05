@@ -132,7 +132,7 @@ class ArtzyCameraButton: UIButton {
             if self.videoSaved == false {
                 print("IMAGE");
 //                self.saveImage(image:self.sceneView.snapshot());
-                self.cameraHUDDelegate?.saveImage(image: self.sceneView.snapshot());
+                self.cameraHUDDelegate?.saveImage(image:self.sceneView.snapshot());
             }
             else {
                 print("Video Already saved");

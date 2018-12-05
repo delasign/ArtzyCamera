@@ -33,12 +33,16 @@
 		BA82E26D21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E26C21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift */; };
 		BA82E26F21B5DC9E002CEFE4 /* Color.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E26E21B5DC9E002CEFE4 /* Color.metal */; };
 		BA82E27721B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27521B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift */; };
-		BA82E27821B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27621B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift */; };
-		BA82E27B21B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27921B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift */; };
+		BA82E27821B5DD41002CEFE4 /* HUDVideoFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27621B5DD41002CEFE4 /* HUDVideoFunc.swift */; };
+		BA82E27B21B5DD56002CEFE4 /* HUDPhotoFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27921B5DD56002CEFE4 /* HUDPhotoFunc.swift */; };
 		BA82E27C21B5DD56002CEFE4 /* ArtzyCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E27A21B5DD56002CEFE4 /* ArtzyCameraButton.swift */; };
 		BA82E28221B5DD94002CEFE4 /* ResetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28121B5DD94002CEFE4 /* ResetButton.swift */; };
 		BA82E28421B5DEC6002CEFE4 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28321B5DEC6002CEFE4 /* PreviewView.swift */; };
 		BA82E28721B5DF80002CEFE4 /* AppVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28621B5DF80002CEFE4 /* AppVariables.swift */; };
+		BA82E28B21B6ED83002CEFE4 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28A21B6ED83002CEFE4 /* NotificationView.swift */; };
+		BA82E28E21B735C9002CEFE4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28D21B735C9002CEFE4 /* BaseView.swift */; };
+		BA82E29021B736BE002CEFE4 /* HUDAudioFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28F21B736BE002CEFE4 /* HUDAudioFunc.swift */; };
+		BA82E29221B73725002CEFE4 /* HUDRecordingFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E29121B73725002CEFE4 /* HUDRecordingFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,12 +95,16 @@
 		BA82E26C21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceOfArtzyVariables.swift; sourceTree = "<group>"; };
 		BA82E26E21B5DC9E002CEFE4 /* Color.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Color.metal; sourceTree = "<group>"; };
 		BA82E27521B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHUDViewControllerViewController.swift; sourceTree = "<group>"; };
-		BA82E27621B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHUDViewControllerReplayKitFunctionality.swift; sourceTree = "<group>"; };
-		BA82E27921B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHUDPhotoFunctionality.swift; sourceTree = "<group>"; };
+		BA82E27621B5DD41002CEFE4 /* HUDVideoFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDVideoFunc.swift; sourceTree = "<group>"; };
+		BA82E27921B5DD56002CEFE4 /* HUDPhotoFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDPhotoFunc.swift; sourceTree = "<group>"; };
 		BA82E27A21B5DD56002CEFE4 /* ArtzyCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtzyCameraButton.swift; sourceTree = "<group>"; };
 		BA82E28121B5DD94002CEFE4 /* ResetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetButton.swift; sourceTree = "<group>"; };
 		BA82E28321B5DEC6002CEFE4 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		BA82E28621B5DF80002CEFE4 /* AppVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVariables.swift; sourceTree = "<group>"; };
+		BA82E28A21B6ED83002CEFE4 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		BA82E28D21B735C9002CEFE4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BA82E28F21B736BE002CEFE4 /* HUDAudioFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDAudioFunc.swift; sourceTree = "<group>"; };
+		BA82E29121B73725002CEFE4 /* HUDRecordingFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDRecordingFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,11 +286,12 @@
 		BA82E27021B5DCCB002CEFE4 /* HUD */ = {
 			isa = PBXGroup;
 			children = (
-				BA82E27621B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift */,
-				BA82E27521B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift */,
-				BA82E27921B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift */,
-				BA82E27221B5DCF7002CEFE4 /* Buttons */,
+				BA82E28C21B735B2002CEFE4 /* BaseView */,
 				BA82E27121B5DCE6002CEFE4 /* Preview */,
+				BA82E28921B6ED02002CEFE4 /* NotificationView */,
+				BA82E27221B5DCF7002CEFE4 /* Buttons */,
+				BA82E27521B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift */,
+				BA82E28821B637C2002CEFE4 /* Functionality */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -326,6 +335,33 @@
 				BA82E28621B5DF80002CEFE4 /* AppVariables.swift */,
 			);
 			path = Variables;
+			sourceTree = "<group>";
+		};
+		BA82E28821B637C2002CEFE4 /* Functionality */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E27621B5DD41002CEFE4 /* HUDVideoFunc.swift */,
+				BA82E27921B5DD56002CEFE4 /* HUDPhotoFunc.swift */,
+				BA82E28F21B736BE002CEFE4 /* HUDAudioFunc.swift */,
+				BA82E29121B73725002CEFE4 /* HUDRecordingFunc.swift */,
+			);
+			path = Functionality;
+			sourceTree = "<group>";
+		};
+		BA82E28921B6ED02002CEFE4 /* NotificationView */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E28A21B6ED83002CEFE4 /* NotificationView.swift */,
+			);
+			path = NotificationView;
+			sourceTree = "<group>";
+		};
+		BA82E28C21B735B2002CEFE4 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E28D21B735C9002CEFE4 /* BaseView.swift */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,23 +499,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA82E25421B5D13C002CEFE4 /* GlowRedRender.metal in Sources */,
+				BA82E28E21B735C9002CEFE4 /* BaseView.swift in Sources */,
 				BA82E28421B5DEC6002CEFE4 /* PreviewView.swift in Sources */,
 				BA82E25321B5D13C002CEFE4 /* GlowBlueRender.metal in Sources */,
 				BA82E28221B5DD94002CEFE4 /* ResetButton.swift in Sources */,
+				BA82E29021B736BE002CEFE4 /* HUDAudioFunc.swift in Sources */,
 				BA82E27721B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift in Sources */,
 				BA82E24321B5CED9002CEFE4 /* Glow.metal in Sources */,
 				BA82E26321B5D4FC002CEFE4 /* TimedStrokeTexture.metal in Sources */,
 				BA82E27C21B5DD56002CEFE4 /* ArtzyCameraButton.swift in Sources */,
+				BA82E28B21B6ED83002CEFE4 /* NotificationView.swift in Sources */,
 				BA82E26D21B5D6B9002CEFE4 /* PieceOfArtzyVariables.swift in Sources */,
 				BA82E25E21B5D4FC002CEFE4 /* FadeInTexture.metal in Sources */,
 				BA82E26121B5D4FC002CEFE4 /* BackwardsTimedStrokeTexture.metal in Sources */,
-				BA82E27821B5DD41002CEFE4 /* CameraHUDViewControllerReplayKitFunctionality.swift in Sources */,
+				BA82E27821B5DD41002CEFE4 /* HUDVideoFunc.swift in Sources */,
+				BA82E29221B73725002CEFE4 /* HUDRecordingFunc.swift in Sources */,
 				BA82E26021B5D4FC002CEFE4 /* Texture.metal in Sources */,
 				BA82E26421B5D4FC002CEFE4 /* FadeIn.metal in Sources */,
 				BA82E26A21B5D63E002CEFE4 /* ShaderFunctionality.swift in Sources */,
 				BA82E26221B5D4FC002CEFE4 /* TimedStroke.metal in Sources */,
 				BA82E25F21B5D4FC002CEFE4 /* BackwardStroke.metal in Sources */,
-				BA82E27B21B5DD56002CEFE4 /* CameraHUDPhotoFunctionality.swift in Sources */,
+				BA82E27B21B5DD56002CEFE4 /* HUDPhotoFunc.swift in Sources */,
 				BA82E23B21B5CA88002CEFE4 /* PieceOfArtzy.swift in Sources */,
 				BA82E20A21B5C85D002CEFE4 /* ViewController.swift in Sources */,
 				BA82E25D21B5D4FC002CEFE4 /* Stroke.metal in Sources */,
