@@ -205,7 +205,6 @@ extension PieceOfArtzy {
     func addStrokeShaderWithTimeForChild(child:SCNNode, loopTime:Float, startTime:Float, endTime:Float) {
         
         
-        DispatchQueue.main.async {
             let program = SCNProgram()
             var programType:String = "TimedStroke"
             
@@ -228,7 +227,6 @@ extension PieceOfArtzy {
             shaderMaterial.setValue(Data(bytes: &firstStrokeTimeVariableStruct, count: MemoryLayout<strokeTimeVariableStruct>.stride), forKey: "timeVariables");
             
             child.geometry?.materials = [shaderMaterial];
-        }
     }
     
 }

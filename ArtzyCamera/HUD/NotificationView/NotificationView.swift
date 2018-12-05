@@ -10,18 +10,30 @@ import Foundation
 import UIKit
 import AVFoundation
 
+enum ArtzyNotificationStyle {
+    case searching
+    case itemFound
+    case preview
+    case error
+    case previous
+}
+
 class NotificationView: UIView {
     
-    private var title:String = "searching...";
+    public var title:String = "searching...";
     private var previousTitle:String = "";
     private var notificationLabel:UILabel = UILabel();
+    
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame);
         
-        self.notificationLabel.frame = self.bounds;
-        self.updateNotification(title: self.title);
+        artzyNotificationBlimp = NotificationBlimp(frame: kArtzyBlimpBaseRect);
+        self.addSubview(artzyNotificationBlimp)
         
+        self.notificationLabel.frame = self.bounds;
+        self.updateNotification(title: self.title, style:.searching);
         
         self.addSubview(self.notificationLabel);
     }
@@ -37,25 +49,37 @@ class NotificationView: UIView {
     
     // Update Title
     
-    public func updateNotification(title:String) {
+    public func updateNotification(title:String, style:ArtzyNotificationStyle) {
         
         self.previousTitle = self.title;
         self.title = title;
         
         self.notificationLabel.attributedText = self.generateAttributedTitle(string: self.title, size: 18)
+        self.notificationLabel.numberOfLines = 3
+        
+        self.notificationLabel.textAlignment = .left;
+        self.notificationLabel.frame = CGRect(x: kArtzyBlimpDimension+kArtzyHUDButtonGap, y: kArtzyResetButtonMinY*0.33, width: self.bounds.width-kArtzyBlimpDimension-kArtzyHUDButtonGap, height: self.notificationLabel.frame.height)
         self.notificationLabel.sizeToFit();
-        self.notificationLabel.textAlignment = .center;
-        self.notificationLabel.frame = CGRect(x: 0, y: kArtzyResetButtonMinY*0.33, width: self.bounds.width, height: self.notificationLabel.frame.height)
+        
+        artzyNotificationBlimp.updateNotificationStyle(style:style);
     }
     
     public func returnToPreviousTitle() {
         self.title = self.previousTitle;
         
         self.notificationLabel.attributedText = self.generateAttributedTitle(string: self.title, size: 18)
+        self.notificationLabel.numberOfLines = 3
+        
+        self.notificationLabel.textAlignment = .left;
+        self.notificationLabel.frame = CGRect(x: kArtzyBlimpDimension+kArtzyHUDButtonGap, y: kArtzyResetButtonMinY*0.33, width: self.bounds.width-kArtzyBlimpDimension-kArtzyHUDButtonGap, height: self.notificationLabel.frame.height)
         self.notificationLabel.sizeToFit();
-        self.notificationLabel.textAlignment = .center;
-        self.notificationLabel.frame = CGRect(x: 0, y: kArtzyResetButtonMinY*0.33, width: self.bounds.width, height: self.notificationLabel.frame.height)
+        
+        artzyNotificationBlimp.updateNotificationStyle(style:.previous);
     }
     
+    public func makeNotificationBlink() {
+        
+        
+    }
 }
 

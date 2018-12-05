@@ -83,29 +83,25 @@ fragment half4 TimedStrokeSurfaceFragment(Vertex in [[stage_in]],
                                           constant TimeVariables& timeVariables [[buffer(2)]])
 {
     
-    //    float delayTime = 0;
-    
-    
-    
     float currentTime = in.time;
     float timerMilestone = floor(currentTime/timeVariables.loopTime);
-    
+
     float loopTimer = (currentTime - timerMilestone*timeVariables.loopTime);
-    
+
     if ( loopTimer < timeVariables.startTime) {
         // hasnt started
         discard_fragment();
     }
     else if (loopTimer < timeVariables.endTime) {
         // has started
-        
+
         float showUVsIfSmallerThan = (loopTimer-timeVariables.startTime)/(timeVariables.endTime-timeVariables.startTime);
-        
+
         if ((1-in.uv.y) > showUVsIfSmallerThan) {
             // These Are Invalid, remove
             discard_fragment();
         }
-        
+
     }
     else {
         // SHOW ALL

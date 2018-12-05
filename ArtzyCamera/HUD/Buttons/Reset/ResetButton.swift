@@ -18,12 +18,7 @@ class ResetButton: UIButton {
         // Instatiate Camera Circle
         
         super.init(frame: CGRect(x: screenWidth - kArtzyResetButtonDimension - kArtzyHUDButtonGap/2, y:kArtzyResetButtonMinY, width: kArtzyResetButtonDimension, height: kArtzyResetButtonDimension));
-        
-//        self.backgroundColor = UIColor.white.withAlphaComponent(0.6);
         self.setAttributedTitle(self.generateAttributedTitle(string: "reset", size: 18), for: .normal);
-//        self.setTitle("RESET", for: .normal)
-        
-//        self.setBackgroundImage(UIImage(named:"resetButton"), for: .normal);
         self.layer.cornerRadius = 6;
         
         
@@ -44,10 +39,7 @@ class ResetButton: UIButton {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         DispatchQueue.global().async { [weak self] in
-            self?.viewControllerDelegate?.resetTracking();
             self?.cameraHUDDelegate?.resetCameraHUD();
-//            FileManager.default.clearTmpDirectory();
-//            artzyAssetsManager.loadAssets();
         }
     }
     

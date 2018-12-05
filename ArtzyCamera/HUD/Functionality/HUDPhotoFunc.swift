@@ -12,6 +12,14 @@ import Photos
 
 extension CameraHUDViewController {
     
+    func previewPhoto(image:UIImage) {
+        
+        self.view.addSubview(self.previewView);
+        self.view.bringSubviewToFront(artzyNotificationView);
+        self.previewView.showPreviewView(withImage:image);
+        
+    }
+    
     public func saveImage(image:UIImage){
         // Save as UI Image
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)

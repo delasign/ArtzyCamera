@@ -51,7 +51,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
         // Set the view's delegate
         self.sceneView.delegate = self
         self.sceneView.session.delegate = self
-//        self.sceneView.rendersContinuously = true;
+        
+//        self.sceneView.antialiasingMode = .multisampling4X
         
         self.HUD = UIWindow(frame: self.view.frame);
         
@@ -62,14 +63,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
         self.HUD.rootViewController!.view.alpha = 1;
         self.HUD.makeKeyAndVisible()
         
-        if let camera = self.sceneView.pointOfView?.camera {
-//            camera.wantsHDR = true
-//            camera.wantsExposureAdaptation = true
-//            camera.whitePoint = 1.0
-//            camera.exposureOffset = 1
-//            camera.minimumExposure = 1
-//            camera.maximumExposure = 1
-        }
         
         
         //Photos
@@ -177,6 +170,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
     }
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+//        print("OPEN GL CONTEXT  \(self.sceneView)" )
         self.sceneView.technique?.setObject(NSNumber(value: 1), forKeyedSubscript: "customVariableSymbol" as NSCopying)
         DispatchQueue.main.async {
             (self.HUD.rootViewController as! CameraHUDViewController).didUpdateAtTime(time:time);
@@ -188,6 +182,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
             
             
         }
+    
     }
     
     var imageHighlightAction: SCNAction {

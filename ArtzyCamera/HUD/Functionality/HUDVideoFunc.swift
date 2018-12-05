@@ -184,7 +184,6 @@ extension CameraHUDViewController {
         //https://stackoverflow.com/questions/44400741/convert-image-to-cvpixelbuffer-for-machine-learning-swift
         let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
         var pixelBuffer : CVPixelBuffer?
-//        let status = CVPixelBufferCreate(kCFAllocatorDefault, Int(image.size.width), Int(image.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
         let status = CVPixelBufferCreate(kCFAllocatorDefault, Int(UIScreen.main.bounds.size.width), Int(UIScreen.main.bounds.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
         
         guard (status == kCVReturnSuccess) else {
@@ -196,19 +195,17 @@ extension CameraHUDViewController {
         let pixelData = CVPixelBufferGetBaseAddress(pixelBuffer!)
         
         let rgbColorSpace = CGColorSpaceCreateDeviceRGB()
-//        let context = CGContext(data: pixelData, width: Int(image.size.width), height: Int(image.size.height), bitsPerComponent: 8, bytesPerRow: CVPixelBufferGetBytesPerRow(pixelBuffer!), space: rgbColorSpace, bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue)
-        
         let context = CGContext(data: pixelData, width: Int(UIScreen.main.bounds.size.width), height: Int(UIScreen.main.bounds.size.height), bitsPerComponent: 8, bytesPerRow: CVPixelBufferGetBytesPerRow(pixelBuffer!), space: rgbColorSpace, bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue)
         
-//        context?.translateBy(x: 0, y: image.size.height)
         context?.translateBy(x: 0, y: UIScreen.main.bounds.size.height)
         context?.scaleBy(x: 1.0, y: -1.0)
         
         UIGraphicsPushContext(context!)
-//        image.draw(in: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
         image.draw(in: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
         UIGraphicsPopContext()
         CVPixelBufferUnlockBaseAddress(pixelBuffer!, CVPixelBufferLockFlags(rawValue: 0))
+        
+//        CVPixelBufferReleaseBytesCallback(
         
         completionHandler(nil, pixelBuffer)
     }

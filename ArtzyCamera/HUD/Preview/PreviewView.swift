@@ -10,9 +10,19 @@ import Foundation
 import UIKit
 import AVFoundation
 
+enum ArtzyPreviewTypes {
+    case image
+    case video
+}
+
 class PreviewView: UIView {
     
     public var cameraHUDDelegate:CameraHUDDelegate?
+    
+    private var previewType:ArtzyPreviewTypes = .image;
+    
+    private var imageView:UIImageView = UIImageView()
+    private var previewImage:UIImage = UIImage();
     
     private var player:AVPlayer?
     private var playerLayer:AVPlayerLayer?
@@ -25,7 +35,8 @@ class PreviewView: UIView {
         super.init(frame: frame);
         
         self.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight);
-        self.backgroundColor = .black;
+        
+        self.imageView.frame = self.frame;
         
         // Save button
         let saveButtonWidth:CGFloat = screenWidth/4;
@@ -55,19 +66,39 @@ class PreviewView: UIView {
         return NSMutableAttributedString(string: string, attributes:  [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: size)]);
     }
     
+    public func showPreviewView(withImage:UIImage) {
+        self.previewType = .image;
+        
+        DispatchQueue.main.async {
+            self.imageView.image = withImage;
+            self.addSubview(self.imageView);
+            
+            // Add Buttons
+            self.addSubview(self.saveButton);
+            self.addSubview(self.cancelButton);
+            artzyNotificationView.updateNotification(title: "preview", style: .preview);
+        }
+        
+//        DispatchQueue.main.sync {
+//            artzyNotificationView.updateNotification(title: "preview", style: .preview);
+//        }
+    }
+    
     public func showPreviewView(withURL:URL) {
+        
+        self.previewType = .video;
         
         self.videoURL = withURL;
         self.createPreviewVideo();
         
         DispatchQueue.main.sync {
-            artzyNotificationView.updateNotification(title: "preview");
+            artzyNotificationView.updateNotification(title: "preview", style: .preview);
         }
     }
     
     private func hidePreviewView() {
         
-        self.removeVideoPreview();
+        self.removePreview();
         self.removeFromSuperview();
     }
     
@@ -115,7 +146,14 @@ class PreviewView: UIView {
     // MARK : BUTTON FUNCTIONALITY
     
     @objc private func saveButtonPressed() {
-        self.cameraHUDDelegate?.exportVideo();
+        
+        if self.previewType == .video {
+            self.cameraHUDDelegate?.exportVideo();
+        }
+        else {
+            self.cameraHUDDelegate?.saveImage(image: self.imageView.image!)
+        }
+        
         self.hidePreviewView();
     }
     
@@ -127,9 +165,11 @@ class PreviewView: UIView {
     
     // MARK : COMMON FUNCTIONALITY
     
-    private func removeVideoPreview() {
+    private func removePreview() {
         
-        self.player!.pause();
+        // Video
+        
+        self.player?.pause();
         self.playerLayer?.removeFromSuperlayer();
         
         self.player = nil;
@@ -137,6 +177,13 @@ class PreviewView: UIView {
         
         self.saveButton.removeFromSuperview();
         self.cancelButton.removeFromSuperview();
+        
+        // Image
+        
+        self.imageView.image = nil;
+        self.imageView.removeFromSuperview();
+        
+        // Notification
         
         artzyNotificationView.returnToPreviousTitle();
         

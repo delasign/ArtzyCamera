@@ -43,6 +43,7 @@
 		BA82E28E21B735C9002CEFE4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28D21B735C9002CEFE4 /* BaseView.swift */; };
 		BA82E29021B736BE002CEFE4 /* HUDAudioFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E28F21B736BE002CEFE4 /* HUDAudioFunc.swift */; };
 		BA82E29221B73725002CEFE4 /* HUDRecordingFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E29121B73725002CEFE4 /* HUDRecordingFunc.swift */; };
+		BA82E29421B75F28002CEFE4 /* NotificationBlimp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E29321B75F28002CEFE4 /* NotificationBlimp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		BA82E28D21B735C9002CEFE4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		BA82E28F21B736BE002CEFE4 /* HUDAudioFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDAudioFunc.swift; sourceTree = "<group>"; };
 		BA82E29121B73725002CEFE4 /* HUDRecordingFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDRecordingFunc.swift; sourceTree = "<group>"; };
+		BA82E29321B75F28002CEFE4 /* NotificationBlimp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBlimp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				BA82E28A21B6ED83002CEFE4 /* NotificationView.swift */,
+				BA82E29321B75F28002CEFE4 /* NotificationBlimp.swift */,
 			);
 			path = NotificationView;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				BA82E25E21B5D4FC002CEFE4 /* FadeInTexture.metal in Sources */,
 				BA82E26121B5D4FC002CEFE4 /* BackwardsTimedStrokeTexture.metal in Sources */,
 				BA82E27821B5DD41002CEFE4 /* HUDVideoFunc.swift in Sources */,
+				BA82E29421B75F28002CEFE4 /* NotificationBlimp.swift in Sources */,
 				BA82E29221B73725002CEFE4 /* HUDRecordingFunc.swift in Sources */,
 				BA82E26021B5D4FC002CEFE4 /* Texture.metal in Sources */,
 				BA82E26421B5D4FC002CEFE4 /* FadeIn.metal in Sources */,

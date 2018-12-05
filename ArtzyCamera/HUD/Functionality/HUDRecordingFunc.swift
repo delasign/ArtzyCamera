@@ -15,8 +15,6 @@ extension CameraHUDViewController {
     
     func startRecording() {
         
-        let sampleImage:UIImage = self.sceneView.snapshot();
-        
         self.createURLForVideo(withName: "test") { (videoURL) in
             self.prepareWriterAndInput(size:CGSize(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height), videoURL: videoURL, completionHandler: { (error) in
                 //
@@ -29,7 +27,7 @@ extension CameraHUDViewController {
                     guard result == true else {
                         print("FAILED TO START AUDIO SESSION")
                         DispatchQueue.main.sync {
-                            artzyNotificationView.updateNotification(title: "Audio Session Failed");
+                            artzyNotificationView.updateNotification(title: "Audio Session Failed", style: .error);
                         }
                         return
                     }
@@ -62,7 +60,7 @@ extension CameraHUDViewController {
             catch {
                 print("ERROR STOPPING RECORDING AUDIO SESSION")
                 DispatchQueue.main.sync {
-                    artzyNotificationView.updateNotification(title: "Error :\(error)");
+                    artzyNotificationView.updateNotification(title: "Error :\(error)", style: .error);
                 }
             }
         }

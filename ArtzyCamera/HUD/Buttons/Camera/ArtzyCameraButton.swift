@@ -131,8 +131,8 @@ class ArtzyCameraButton: UIButton {
             // Check if you actually started recording?
             if self.videoSaved == false {
                 print("IMAGE");
-//                self.saveImage(image:self.sceneView.snapshot());
-                self.cameraHUDDelegate?.saveImage(image:self.sceneView.snapshot());
+                self.cameraHUDDelegate?.previewPhoto(image:self.sceneView.snapshot());
+                
             }
             else {
                 print("Video Already saved");
