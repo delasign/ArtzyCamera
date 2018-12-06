@@ -119,7 +119,7 @@ class CameraHUDViewController: UIViewController, CameraHUDDelegate, AVCaptureAud
         
             if self.isRecording {
                 
-                if self.lastTime == 0 || (self.lastTime + 1/31) < time {
+                if self.lastTime == 0 || (self.lastTime + 1/25) < time {
                     
 //                    filmQueue.sync { [weak self] () -> Void in
                     

@@ -30,7 +30,7 @@ class PieceOfArtzy: NSObject, UITextFieldDelegate {
             artzyNotificationView.updateNotification(title: "displaying \(self.referenceImage!.name!)", style: .itemFound);
         }
         
-        if self.referenceImage!.name == "mondriaan"{
+        if self.referenceImage!.name == "local by adamfu x delasign"{
 //            self.performAdamLocalStroke()
             self.performAdamLocalStatic()
         }
@@ -112,7 +112,7 @@ class PieceOfArtzy: NSObject, UITextFieldDelegate {
         
         for child in scn!.rootNode.childNodes {
             child.categoryBitMask = 4;
-            child.position = SCNVector3.init(child.position.x, 0.1, child.position.z);
+            child.position = SCNVector3.init(child.position.x, 0.05, child.position.z);
             
             self.addColorShaderForChild(child: child, red: 1, blue: 1, green: 1);
             if child.name! == "halo" {

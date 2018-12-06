@@ -30,8 +30,6 @@
 	<string>This application will use the Photo Library to save media.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This application will use the Photo Library to save media.</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
