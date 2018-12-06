@@ -149,7 +149,6 @@ class CameraHUDViewController: UIViewController, CameraHUDDelegate, AVCaptureAud
 
                         if (self.videoInput?.isReadyForMoreMediaData)! {
                             // Add pixel buffer to video input
-                            print("Passed Data at \(currentFrameTime)");
                             self.pixelBufferAdaptor!.append(pixelBuffer!, withPresentationTime: currentFrameTime);
                             return
                         }
