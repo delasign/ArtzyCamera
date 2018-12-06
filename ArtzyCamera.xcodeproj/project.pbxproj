@@ -46,6 +46,7 @@
 		BA82E29421B75F28002CEFE4 /* NotificationBlimp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E29321B75F28002CEFE4 /* NotificationBlimp.swift */; };
 		BA82E2D821B85B0D002CEFE4 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E2D721B85B0D002CEFE4 /* CancelButton.swift */; };
 		BA82E2DA21B85DBA002CEFE4 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E2D921B85DBA002CEFE4 /* SaveButton.swift */; };
+		BA93095721B9852D00367A07 /* BackwardsTimedStroke.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA93095621B9852D00367A07 /* BackwardsTimedStroke.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		BA82E29321B75F28002CEFE4 /* NotificationBlimp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBlimp.swift; sourceTree = "<group>"; };
 		BA82E2D721B85B0D002CEFE4 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
 		BA82E2D921B85DBA002CEFE4 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
+		BA93095621B9852D00367A07 /* BackwardsTimedStroke.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BackwardsTimedStroke.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 				BA82E25B21B5D4FC002CEFE4 /* TimedStrokeTexture.metal */,
 				BA82E25921B5D4FB002CEFE4 /* BackwardsTimedStrokeTexture.metal */,
 				BA82E25721B5D4FB002CEFE4 /* BackwardStroke.metal */,
+				BA93095621B9852D00367A07 /* BackwardsTimedStroke.metal */,
 			);
 			path = Stroke;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				BA82E26221B5D4FC002CEFE4 /* TimedStroke.metal in Sources */,
 				BA82E25F21B5D4FC002CEFE4 /* BackwardStroke.metal in Sources */,
 				BA82E27B21B5DD56002CEFE4 /* HUDPhotoFunc.swift in Sources */,
+				BA93095721B9852D00367A07 /* BackwardsTimedStroke.metal in Sources */,
 				BA82E23B21B5CA88002CEFE4 /* PieceOfArtzy.swift in Sources */,
 				BA82E20A21B5C85D002CEFE4 /* ViewController.swift in Sources */,
 				BA82E25D21B5D4FC002CEFE4 /* Stroke.metal in Sources */,

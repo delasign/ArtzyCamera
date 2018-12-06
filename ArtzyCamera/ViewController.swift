@@ -171,18 +171,20 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, Vi
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
 //        print("OPEN GL CONTEXT  \(self.sceneView)" )
-        self.sceneView.technique?.setObject(NSNumber(value: 1), forKeyedSubscript: "customVariableSymbol" as NSCopying)
+        
         DispatchQueue.main.async {
+            
             (self.HUD.rootViewController as! CameraHUDViewController).didUpdateAtTime(time:time);
-            
-            for ArtzyDict in self.activeArtzyPieces {
-                let pieceOfArtzy:PieceOfArtzy = ArtzyDict.value(forKey: "pieceOfArtzy") as! PieceOfArtzy;
-                pieceOfArtzy.didUpdateAtTime();
-            }
-            
             
         }
     
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didRenderScene scene: SCNScene, atTime time: TimeInterval) {
+        for ArtzyDict in self.activeArtzyPieces {
+            let pieceOfArtzy:PieceOfArtzy = ArtzyDict.value(forKey: "pieceOfArtzy") as! PieceOfArtzy;
+            pieceOfArtzy.didUpdateAtTime();
+        }
     }
     
     var imageHighlightAction: SCNAction {

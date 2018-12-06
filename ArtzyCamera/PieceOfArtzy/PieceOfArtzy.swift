@@ -34,14 +34,67 @@ class PieceOfArtzy: NSObject, UITextFieldDelegate {
 //            self.performAdamLocalStroke()
             self.performAdamLocalStatic()
         }
+        
+        else if self.referenceImage!.name == "artzy loader by delasign"{
+            self.performLoaderStroke();
+        }
 
         
         
     }
+    var show:Float = 0;
     
     public func didUpdateAtTime() {
-//        self.node?.rotation.y += 0.01
+        self.show += 0.01
         
+        if self.show > 1 {
+            self.show = 0;
+        }
+        
+        if self.referenceImage!.name == "artzy loader by delasign"{
+            
+            let distance = simd_distance(self.node!.simdTransform.columns.3, (self.sceneView!.session.currentFrame?.camera.transform.columns.3)!);
+            
+            self.sceneView!.technique?.setObject(NSNumber(value: distance), forKeyedSubscript: "distanceSymbol" as NSCopying);
+            
+            for child in (self.node?.childNodes)! {
+                
+                let shaderMaterial:SCNMaterial = (child.geometry?.firstMaterial)!;
+                
+                var displayVariables:DisplayVariableStruct = DisplayVariableStruct(show: self.show)
+                shaderMaterial.setValue(Data(bytes: &displayVariables, count: MemoryLayout<DisplayVariableStruct>.stride), forKey: "displayVariables");
+                
+                
+            }
+            
+            //            let currentTime:Float = self.sceneView?.session.currentFrame?.timestamp;
+            //            let timerMileStone:Float
+            
+            //            float currentTime = in.time;
+            //            float timerMilestone = floor(currentTime/timeVariables.loopTime);
+            //
+            //            float loopTimer = (currentTime - timerMilestone*timeVariables.loopTime);
+            //
+            //            if ( loopTimer < timeVariables.startTime) {
+            //                // hasnt started
+            //                discard_fragment();
+            //            }
+            //            else if (loopTimer < timeVariables.endTime) {
+            //                // has started
+            //
+            //                float showUVsIfSmallerThan = (loopTimer-timeVariables.startTime)/(timeVariables.endTime-timeVariables.startTime);
+            //
+            //                if ((in.uv.y) > showUVsIfSmallerThan) {
+            //                    // These Are Invalid, remove
+            //                    discard_fragment();
+            //                }
+            //
+            //            }
+            //            else {
+            //                // SHOW ALL
+            //            }
+            
+        }
     }
     
     
@@ -106,6 +159,8 @@ class PieceOfArtzy: NSObject, UITextFieldDelegate {
     }
     
     // Pieces
+    
+    // Local
     
     func performAdamLocalStatic() {
         let scn:SCNScene? = SCNScene(named: "art.scnassets/localxAdamfu.scn");
@@ -209,6 +264,57 @@ class PieceOfArtzy: NSObject, UITextFieldDelegate {
         }
         
     }
+    
+    // Loader
+    
+    func performLoaderStroke() {
+        DispatchQueue.main.async {
+            
+            let scnName:String = "art.scnassets/logo.scn";
+            
+            let scn:SCNScene? = SCNScene(named: scnName); //cylinder
+            print("update node");
+            
+            for child in scn!.rootNode.childNodes {
+                
+                child.categoryBitMask = 1;
+                
+                print("Child : ", child.name);
+                let scaleFactor:Float = 1;
+                child.scale = SCNVector3.init(scaleFactor*child.scale.x,scaleFactor*child.scale.y, scaleFactor*child.scale.z);
+                child.position = SCNVector3.init(child.position.x*scaleFactor, 0.1, child.position.z*scaleFactor);
+                
+//                self.addColorShaderForChild(child: child, red: 1, blue: 1, green: 1);
+                self.addBackwardsTimedStrokeShaderWithTimeForChild(child: child, loopTime: 10, startTime: 0, endTime: 5);
+                self.node!.addChildNode(child);
+            }
+            
+            self.sceneView!.scene.rootNode.addChildNode(self.node!);
+            
+            if let path = Bundle.main.path(forResource: "Glow", ofType: "plist") {
+                if let dict = NSDictionary(contentsOfFile: path)  {
+                    print("DICT EXISTS");
+                    let dict2 = dict as! [String : AnyObject]
+                    let technique = SCNTechnique(dictionary:dict2)
+                    self.sceneView!.technique = technique
+                }
+            }
+            
+            
+            self.offset = 1.5;
+            self.weight = 0.175;
+            
+            self.sceneView!.technique?.setObject(NSNumber(value: 0.6352941176), forKeyedSubscript: "redSymbol" as NSCopying);
+            self.sceneView!.technique?.setObject(NSNumber(value: 0.1254901961), forKeyedSubscript: "greenSymbol" as NSCopying);
+            self.sceneView!.technique?.setObject(NSNumber(value: 0.4), forKeyedSubscript: "blueSymbol" as NSCopying);
+            self.sceneView!.technique?.setObject(NSNumber(value: self.offset), forKeyedSubscript: "offsetSymbol" as NSCopying);
+            self.sceneView!.technique?.setObject(NSNumber(value: self.weight), forKeyedSubscript: "weightSymbol" as NSCopying);
+            
+            self.sceneView!.technique?.setObject(NSNumber(value: 1), forKeyedSubscript: "distanceSymbol" as NSCopying);
+            
+        }
+    }
+    
     
     
 }

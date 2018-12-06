@@ -92,6 +92,34 @@ extension PieceOfArtzy {
         }
     }
     
+    func addBackwardsTimedStrokeShaderWithTimeForChild(child:SCNNode, loopTime:Float, startTime:Float, endTime:Float) {
+        
+        
+        DispatchQueue.main.async {
+            let program = SCNProgram()
+            let programType:String = "BackwardsTimedStroke"
+            
+            
+            program.fragmentFunctionName = programType+"SurfaceFragment"
+            program.vertexFunctionName = programType+"VertexShader"
+            
+            program.isOpaque = false;
+            
+            let shaderMaterial = SCNMaterial();
+            shaderMaterial.program = program;
+            shaderMaterial.transparencyMode = .rgbZero;
+            shaderMaterial.blendMode = .alpha;
+            shaderMaterial.writesToDepthBuffer = false
+            shaderMaterial.readsFromDepthBuffer = false
+            shaderMaterial.cullMode = .back
+            
+            var firstStrokeTimeVariableStruct:strokeTimeVariableStruct = strokeTimeVariableStruct.init(loopTime: loopTime, startTime: startTime, endTime: endTime);
+            shaderMaterial.setValue(Data(bytes: &firstStrokeTimeVariableStruct, count: MemoryLayout<strokeTimeVariableStruct>.stride), forKey: "timeVariables");
+            
+            child.geometry?.materials = [shaderMaterial];
+        }
+    }
+    
     func addTimedStrokeTextureShaderWithTimeForChild(child:SCNNode, loopTime:Float, startTime:Float, endTime:Float) {
         
         

@@ -8,6 +8,16 @@
 
 import Foundation
 
+struct DisplayVariableStruct {
+    var show:Float = 10;
+    
+    init(show:Float) {
+        self.show = show;
+    }
+}
+
+
+
 struct strokeTimeVariableStruct {
     var loopTime:Float = 10;
     var startTime:Float = 0;
