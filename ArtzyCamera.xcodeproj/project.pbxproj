@@ -292,12 +292,12 @@
 		BA82E27021B5DCCB002CEFE4 /* HUD */ = {
 			isa = PBXGroup;
 			children = (
+				BA82E27221B5DCF7002CEFE4 /* Buttons */,
 				BA82E28C21B735B2002CEFE4 /* BaseView */,
 				BA82E27121B5DCE6002CEFE4 /* Preview */,
 				BA82E28921B6ED02002CEFE4 /* NotificationView */,
-				BA82E27221B5DCF7002CEFE4 /* Buttons */,
-				BA82E27521B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift */,
 				BA82E28821B637C2002CEFE4 /* Functionality */,
+				BA82E27521B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -728,6 +728,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22HD58B26L;
 				INFOPLIST_FILE = ArtzyCamera/Info.plist;
@@ -746,6 +747,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22HD58B26L;
 				INFOPLIST_FILE = ArtzyCamera/Info.plist;
