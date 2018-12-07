@@ -38,6 +38,25 @@ class PieceOfArtzy: NSObject, UITextFieldDelegate {
         else if self.referenceImage!.name == "artzy loader by delasign"{
             self.performLoaderStroke();
         }
+        else if self.referenceImage!.name == "hand by delasign" {
+            let scn:SCNScene? = SCNScene(named: "art.scnassets/hand.dae");
+            for child in scn!.rootNode.childNodes {
+                self.node!.addChildNode(child)
+            }
+            
+            
+            scn?.rootNode.enumerateHierarchy({ (child, _) in
+                print("Child : ", child);
+                for key in child.animationKeys {
+                    print("KEY : ", key);
+                    let animation = child.animationPlayer(forKey: key)?.animation;
+                    animation?.repeatCount = CGFloat(HUGE);
+                    animation?.isRemovedOnCompletion = false;
+                    self.sceneView!.scene.rootNode.addAnimation(animation!, forKey: key);
+                    print(animation!)
+                }
+            })
+        }
 
         
         

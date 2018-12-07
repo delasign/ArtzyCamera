@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "adamLocal-01.png"
+      "filename" : "Hand-02.png"
     }
   ],
   "info" : {
@@ -10,6 +10,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 0.20999999999999999
+    "width" : 0.17000000000000001
   }
 }
