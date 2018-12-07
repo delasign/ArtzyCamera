@@ -18,8 +18,8 @@ extension CameraHUDViewController {
         self.recordingSession = AVAudioSession.sharedInstance()
         
         do {
-            try self.recordingSession.setCategory(.playAndRecord, mode: .default)
-            try self.recordingSession.setActive(true)
+            try self.recordingSession.setCategory(AVAudioSession.Category.playAndRecord, mode: .videoRecording, options: [.defaultToSpeaker])
+            try self.recordingSession.setActive(true, options: .notifyOthersOnDeactivation)
             
             print("REQUESTED SESSION")
             
@@ -28,6 +28,7 @@ extension CameraHUDViewController {
                     if allowed {
                         //                        self.loadRecordingUI()
                         print("SESSION ALLOWED")
+//                        let microphone = AVCaptureDevice.default(.builtInMicrophone, for: AVMediaType.audio, position: .unspecified)
                         let microphone = AVCaptureDevice.default(.builtInMicrophone, for: AVMediaType.audio, position: .unspecified)
                         
                         do {
@@ -68,9 +69,17 @@ extension CameraHUDViewController {
         
     }
     
-    func endAudioRecording() { //completionHandler:@escaping()->()
-        
-        self.captureSession!.stopRunning();
+    func endAudioCapture() {
+            self.captureSession!.stopRunning();
+    }
+    
+    public func endAudioSession() {
+        do {
+            try self.recordingSession.setActive(false, options: .notifyOthersOnDeactivation)
+        }
+        catch {
+            print("ERROR CANCELLING RECORDING SESSION : \(error)")
+        }
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {

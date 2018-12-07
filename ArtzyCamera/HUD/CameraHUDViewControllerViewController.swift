@@ -16,6 +16,7 @@ protocol CameraHUDDelegate {
     func stopRecording();
     func resetCameraHUD();
     func exportVideo();
+    func endAudioSession();
     func saveImage(image:UIImage);
     func previewPhoto(image:UIImage)
 }

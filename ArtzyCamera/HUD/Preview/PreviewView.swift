@@ -100,6 +100,7 @@ class PreviewView: UIView {
         
         self.removePreview();
         self.removeFromSuperview();
+        self.cameraHUDDelegate?.endAudioSession();
     }
     
     private func createPreviewVideo() {
