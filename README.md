@@ -1,6 +1,6 @@
-# Open Source Artzy Camera
+# Open Source Artzy&#8482; Camera
 
-The Open Source <a href="http://www.artzyapp.com">Artzy</a> Camera is a ARKit super-starter project created by <a href="http://www.delasign.com">Delasign</a> that features an AR Multi-Media recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
+The Open Source <a href="http://www.artzyapp.com">Artzy&#8482; </a> Camera is a ARKit super-starter project created by <a href="http://www.delasign.com">Delasign</a> that features an AR Multi-Media recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
 
 <img src="https://s3.amazonaws.com/www.artzyapp.com/images/opensourceHero.png" width=100% />
 
@@ -183,7 +183,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Artzy Logo
+## Artzy&#8482; Logo
 
 Created by <a href="https://www.instagram.com/adamfu/">AdamFu</a> under the and licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
