@@ -1,12 +1,12 @@
 # Open Source Artzy&#8482; Camera
 
-The Open Source <a href="http://www.artzyapp.com">Artzy&#8482; </a> Camera is a ARKit super-starter project created by <a href="http://www.delasign.com">Delasign</a> that features an AR multi-media recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
+The Open Source <a href="http://www.artzyapp.com">Artzy&#8482; </a> Camera is an ARKit super-starter project created by <a href="http://www.delasign.com">Delasign</a> that features an AR multi-media recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
 
 <img src="https://s3.amazonaws.com/www.artzyapp.com/images/opensourceHero.png" width=100% />
 
 # Sharing is caring.
 
-If you create anything, please share it on Instagram and tag <a href="https://www.instagram.com/artzyapp/">@artzyapp</a> along with the hashtag #artzy.
+If you create anything, please share it on Instagram and tag <a href="https://www.instagram.com/artzyapp/">@artzyapp</a> along with #artzy.
 
 
 # Getting started
@@ -15,13 +15,13 @@ Download the repo and print the three images in the "GettingStarted" folder. The
 After printing, open the app and place your phone infront of the images to experience the three samples.
 
 # Ok, I want to start creating.
-I recommend reading up on AR and ARKit before becoming familiar with how the samples were created. There are found in the "HowItWasMade" folder, which includes the files that were used and the corresponding images.
+I recommend reading up on AR and ARKit before becoming familiar with how the samples were created. These are found in the "HowItWasMade" folder, which includes the files that were used and the corresponding images.
 
 If you have any questions please email questions to : artzy@delasign.com
 
 # Recommended reading
 
-For all non-apple posts ever, please visit <a href="http://www.oscardelahera.com/blog">my blog.</a>
+For all posts ever, please visit <a href="http://www.oscardelahera.com/blog">my blog.</a>
 
 <b>Apple Documentation</b>:
 
@@ -56,7 +56,7 @@ For all non-apple posts ever, please visit <a href="http://www.oscardelahera.com
 
 # Sample projects
 
-The repository comes with three opensource AR samples:
+The repository comes with three opensource AR samples, which are detailed below.
 
 ## 'local' by <a href="https://www.instagram.com/adamfu/">adamfu</a> x delasign
 
@@ -106,7 +106,7 @@ For tutorials on how this was created please read the following:
 - <a href="https://medium.com/ar-tips-and-tricks/a-scntechnique-requires-a-scn-model-filetype-b8cf01c93414">A SCNTechnique requires a .scn model</a>
 
 <b>Stroke</b>:
-The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 66 -> 92. The amount to show has to be programmed in for the camera to be able to capture it. For a non-capturable version, please read:
+The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 66 -> 92. The amount of the letter that must be shown at any given instance has to be programmed in order for the camera to be able to capture it. For a non-capturable version and how to take it from there to the latest version, please read:
 
 - <a href="https://medium.com/ar-tips-and-tricks/a-free-stroke-metal-shader-on-a-timer-for-arkit-ios-11-4-12-8c69cbcaae80">Free Stroke Metal Shader on a Timer</a>
 
