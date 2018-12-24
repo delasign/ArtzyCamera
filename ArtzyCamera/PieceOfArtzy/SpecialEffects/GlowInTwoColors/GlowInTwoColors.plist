@@ -82,13 +82,13 @@
 				<string>MASK</string>
 			</dict>
 			<key>metalFragmentShader</key>
-			<string>blur_fragment_h</string>
+			<string>blue_blur_fragment_h</string>
 			<key>program</key>
 			<string>doesntexist</string>
 			<key>draw</key>
 			<string>DRAW_QUAD</string>
 			<key>metalVertexShader</key>
-			<string>blur_vertex</string>
+			<string>blue_blur_vertex</string>
 		</dict>
 		<key>pass_red_blur_h</key>
 		<dict>
@@ -142,8 +142,6 @@
 			<string>DRAW_SCENE</string>
 			<key>metalVertexShader</key>
 			<string>red_mask_vertex</string>
-			<key>includeCategoryMask</key>
-			<integer>3</integer>
 		</dict>
 		<key>pass_draw_masks</key>
 		<dict>
@@ -160,13 +158,13 @@
 				<string>MASK</string>
 			</dict>
 			<key>metalFragmentShader</key>
-			<string>mask_vertex</string>
-			<key>excludeCategoryMask</key>
-			<integer>3</integer>
+			<string>blue_mask_vertex</string>
+			<key>program</key>
+			<string>doesntexist</string>
 			<key>draw</key>
 			<string>DRAW_SCENE</string>
 			<key>metalVertexShader</key>
-			<string>mask_fragment</string>
+			<string>blue_mask_fragment</string>
 			<key>includeCategoryMask</key>
 			<integer>4</integer>
 		</dict>
@@ -190,13 +188,13 @@
 				<string>MASK</string>
 			</dict>
 			<key>metalFragmentShader</key>
-			<string>blur_fragment_v</string>
+			<string>blue_blur_fragment_v</string>
 			<key>program</key>
 			<string>doesntexist</string>
 			<key>draw</key>
 			<string>DRAW_QUAD</string>
 			<key>metalVertexShader</key>
-			<string>blur_vertex</string>
+			<string>blue_blur_vertex</string>
 		</dict>
 		<key>pass_combine</key>
 		<dict>
@@ -220,13 +218,13 @@
 				<string>COLOR</string>
 			</dict>
 			<key>metalFragmentShader</key>
-			<string>combine_fragment</string>
+			<string>blue_combine_fragment</string>
 			<key>program</key>
 			<string>doesntexist</string>
 			<key>draw</key>
 			<string>DRAW_QUAD</string>
 			<key>metalVertexShader</key>
-			<string>combine_vertex</string>
+			<string>blue_combine_vertex</string>
 		</dict>
 	</dict>
 	<key>sequence</key>

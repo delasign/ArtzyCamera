@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA06583021D109E1008F8C92 /* GlowBlue.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA06582F21D109E1008F8C92 /* GlowBlue.metal */; };
 		BA82E20621B5C85D002CEFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E20521B5C85D002CEFE4 /* AppDelegate.swift */; };
 		BA82E20821B5C85D002CEFE4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82E20721B5C85D002CEFE4 /* art.scnassets */; };
 		BA82E20A21B5C85D002CEFE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E20921B5C85D002CEFE4 /* ViewController.swift */; };
@@ -19,8 +20,7 @@
 		BA82E24321B5CED9002CEFE4 /* Glow.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E24121B5CED9002CEFE4 /* Glow.metal */; };
 		BA82E24421B5CED9002CEFE4 /* Glow.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA82E24221B5CED9002CEFE4 /* Glow.plist */; };
 		BA82E24E21B5CF3D002CEFE4 /* GlowInTwoColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA82E24A21B5CF3D002CEFE4 /* GlowInTwoColors.plist */; };
-		BA82E25321B5D13C002CEFE4 /* GlowBlueRender.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E25121B5D13B002CEFE4 /* GlowBlueRender.metal */; };
-		BA82E25421B5D13C002CEFE4 /* GlowRedRender.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E25221B5D13C002CEFE4 /* GlowRedRender.metal */; };
+		BA82E25421B5D13C002CEFE4 /* GlowRed.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E25221B5D13C002CEFE4 /* GlowRed.metal */; };
 		BA82E25D21B5D4FC002CEFE4 /* Stroke.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E25521B5D4FB002CEFE4 /* Stroke.metal */; };
 		BA82E25E21B5D4FC002CEFE4 /* FadeInTexture.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E25621B5D4FB002CEFE4 /* FadeInTexture.metal */; };
 		BA82E25F21B5D4FC002CEFE4 /* BackwardStroke.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA82E25721B5D4FB002CEFE4 /* BackwardStroke.metal */; };
@@ -67,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA06582F21D109E1008F8C92 /* GlowBlue.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GlowBlue.metal; sourceTree = "<group>"; };
 		BA82E20221B5C85D002CEFE4 /* ArtzyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtzyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA82E20521B5C85D002CEFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA82E20721B5C85D002CEFE4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -85,8 +86,7 @@
 		BA82E24121B5CED9002CEFE4 /* Glow.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Glow.metal; sourceTree = "<group>"; };
 		BA82E24221B5CED9002CEFE4 /* Glow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Glow.plist; sourceTree = "<group>"; };
 		BA82E24A21B5CF3D002CEFE4 /* GlowInTwoColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GlowInTwoColors.plist; sourceTree = "<group>"; };
-		BA82E25121B5D13B002CEFE4 /* GlowBlueRender.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = GlowBlueRender.metal; sourceTree = "<group>"; };
-		BA82E25221B5D13C002CEFE4 /* GlowRedRender.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = GlowRedRender.metal; sourceTree = "<group>"; };
+		BA82E25221B5D13C002CEFE4 /* GlowRed.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = GlowRed.metal; sourceTree = "<group>"; };
 		BA82E25521B5D4FB002CEFE4 /* Stroke.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Stroke.metal; sourceTree = "<group>"; };
 		BA82E25621B5D4FB002CEFE4 /* FadeInTexture.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = FadeInTexture.metal; sourceTree = "<group>"; };
 		BA82E25721B5D4FB002CEFE4 /* BackwardStroke.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BackwardStroke.metal; sourceTree = "<group>"; };
@@ -238,8 +238,8 @@
 		BA82E24621B5CF03002CEFE4 /* GlowInTwoColors */ = {
 			isa = PBXGroup;
 			children = (
-				BA82E25221B5D13C002CEFE4 /* GlowRedRender.metal */,
-				BA82E25121B5D13B002CEFE4 /* GlowBlueRender.metal */,
+				BA82E25221B5D13C002CEFE4 /* GlowRed.metal */,
+				BA06582F21D109E1008F8C92 /* GlowBlue.metal */,
 				BA82E24A21B5CF3D002CEFE4 /* GlowInTwoColors.plist */,
 			);
 			path = GlowInTwoColors;
@@ -526,10 +526,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA82E25421B5D13C002CEFE4 /* GlowRedRender.metal in Sources */,
+				BA82E25421B5D13C002CEFE4 /* GlowRed.metal in Sources */,
 				BA82E28E21B735C9002CEFE4 /* BaseView.swift in Sources */,
 				BA82E28421B5DEC6002CEFE4 /* PreviewView.swift in Sources */,
-				BA82E25321B5D13C002CEFE4 /* GlowBlueRender.metal in Sources */,
+				BA06583021D109E1008F8C92 /* GlowBlue.metal in Sources */,
 				BA82E28221B5DD94002CEFE4 /* ResetButton.swift in Sources */,
 				BA82E29021B736BE002CEFE4 /* HUDAudioFunc.swift in Sources */,
 				BA82E27721B5DD41002CEFE4 /* CameraHUDViewControllerViewController.swift in Sources */,

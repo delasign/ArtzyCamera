@@ -74,44 +74,19 @@ class PieceOfArtzy: NSObject, UITextFieldDelegate {
             
             let distance = simd_distance(self.node!.simdTransform.columns.3, (self.sceneView!.session.currentFrame?.camera.transform.columns.3)!);
             
+            // Update distance to camera
             self.sceneView!.technique?.setObject(NSNumber(value: distance), forKeyedSubscript: "distanceSymbol" as NSCopying);
             
             for child in (self.node?.childNodes)! {
                 
                 let shaderMaterial:SCNMaterial = (child.geometry?.firstMaterial)!;
                 
+                // Update what should be shown of the model
                 var displayVariables:DisplayVariableStruct = DisplayVariableStruct(show: self.show)
                 shaderMaterial.setValue(Data(bytes: &displayVariables, count: MemoryLayout<DisplayVariableStruct>.stride), forKey: "displayVariables");
                 
                 
             }
-            
-            //            let currentTime:Float = self.sceneView?.session.currentFrame?.timestamp;
-            //            let timerMileStone:Float
-            
-            //            float currentTime = in.time;
-            //            float timerMilestone = floor(currentTime/timeVariables.loopTime);
-            //
-            //            float loopTimer = (currentTime - timerMilestone*timeVariables.loopTime);
-            //
-            //            if ( loopTimer < timeVariables.startTime) {
-            //                // hasnt started
-            //                discard_fragment();
-            //            }
-            //            else if (loopTimer < timeVariables.endTime) {
-            //                // has started
-            //
-            //                float showUVsIfSmallerThan = (loopTimer-timeVariables.startTime)/(timeVariables.endTime-timeVariables.startTime);
-            //
-            //                if ((in.uv.y) > showUVsIfSmallerThan) {
-            //                    // These Are Invalid, remove
-            //                    discard_fragment();
-            //                }
-            //
-            //            }
-            //            else {
-            //                // SHOW ALL
-            //            }
             
         }
     }
@@ -186,9 +161,11 @@ class PieceOfArtzy: NSObject, UITextFieldDelegate {
         
         for child in scn!.rootNode.childNodes {
             child.categoryBitMask = 4;
-            child.position = SCNVector3.init(child.position.x, 0.05, child.position.z);
             
             self.addColorShaderForChild(child: child, red: 1, blue: 1, green: 1);
+            
+            child.position = SCNVector3.init(child.position.x, child.position.y+0.1, child.position.z);
+            
             if child.name! == "halo" {
                 child.categoryBitMask = 3;
                 child.position = SCNVector3.init(child.position.x, 0.074, child.position.z);
@@ -222,7 +199,7 @@ class PieceOfArtzy: NSObject, UITextFieldDelegate {
         
         for child in scn!.rootNode.childNodes {
             child.categoryBitMask = 4;
-            child.position = SCNVector3.init(child.position.x, 0.1, child.position.z);
+            child.position = SCNVector3.init(child.position.x, child.position.y+0.1, child.position.z);
             
             let globalLoopTime:Float = 15;
             
