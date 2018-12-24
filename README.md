@@ -1,6 +1,6 @@
 # Opensource Artzy Camera
 
-The Opensource Artzy Camera is a ARKit starter project created by <a href="http://www.delasign.com">Delasign</a> that features an AR Video recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
+The Opensource Artzy Camera is a ARKit starter project created by <a href="http://www.delasign.com">Delasign</a> that features an AR Multi-Media recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
 
 # Sharing is caring.
 
