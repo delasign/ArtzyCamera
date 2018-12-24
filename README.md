@@ -132,7 +132,7 @@ The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* lin
 
 # Shader Library
 
-The current shader library includes:
+The current shader library can be found in *PieceOfArtzy/Shaders* and includes:
 
 - Color Shader
 - Texture Shader
