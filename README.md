@@ -1,6 +1,6 @@
 # Open Source Artzy&#8482; Camera
 
-The Open Source <a href="http://www.artzyapp.com">Artzy&#8482; </a> Camera is a ARKit super-starter project created by <a href="http://www.delasign.com">Delasign</a> that features an AR Multi-Media recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
+The Open Source <a href="http://www.artzyapp.com">Artzy&#8482; </a> Camera is a ARKit super-starter project created by <a href="http://www.delasign.com">Delasign</a> that features an AR multi-media recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
 
 <img src="https://s3.amazonaws.com/www.artzyapp.com/images/opensourceHero.png" width=100% />
 
