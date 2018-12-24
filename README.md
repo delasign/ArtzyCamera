@@ -9,7 +9,7 @@ The Open Source <a href="http://www.artzyapp.com">Artzy&#8482; </a> Camera is a 
 If you create anything, please share it on Instagram and tag <a href="https://www.instagram.com/artzyapp/">@artzyapp</a> along with the hashtag #artzy.
 
 
-# Getting Started
+# Getting started
 Download the repo and print the three images in the "GettingStarted" folder. These are the three AR samples that come with the project.
 
 After printing, open the app and place your phone infront of the images to experience the three samples.
