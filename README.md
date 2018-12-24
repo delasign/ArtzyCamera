@@ -60,6 +60,8 @@ The repository comes with three opensource AR samples, which are detailed below.
 
 ## 'local' by <a href="https://www.instagram.com/adamfu/">adamfu</a> x delasign
 
+<img src="https://s3.amazonaws.com/www.artzyapp.com/images/ImageSamples-03.png" width=100% />
+
 This project features a double neon glow - the word glows in blue, whilst the halo glows in red.
 
 For tutorials on how this was created please read the following:
@@ -86,6 +88,8 @@ The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* lin
 To see it perform an animated, timed stroke - switch the functionality in *PieceOfArtzy/PieceOfArtzy.swift* line 34.
 
 ## 'loader' by delasign
+
+<img src="https://s3.amazonaws.com/www.artzyapp.com/images/ImageSamples-01.png" width=100% />
 
 This project features a 3d stroke neon glow - it appears as though the word has been drawn.
 
@@ -121,6 +125,8 @@ The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* lin
 
 
 ## 'hand' by delasign
+
+<img src="https://s3.amazonaws.com/www.artzyapp.com/images/ImageSamples-02.png" width=100% />
 
 This project features an outline of a hand that animates to show you the peace sign.
 
