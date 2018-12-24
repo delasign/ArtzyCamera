@@ -1,12 +1,14 @@
-## Opensource Artzy Camera
+# Opensource Artzy Camera
 
 The Opensource Artzy Camera is a ARKit starter project that features an AR Camera and Video Recorder, to allow you to capture and share the content that you create.
 
-## Sample Projects
+The project contains an AR Video recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
+
+# Sample Projects
 
 The repository comes with three opensource AR samples, 
 
-# 'local' by adamfu x delasign
+## 'local' by adamfu x delasign
 
 This project features a double neon glow - the word glows in blue, whilst the halo glows in red.
 
