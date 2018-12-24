@@ -6,6 +6,14 @@ The Open Source <a href="http://www.artzyapp.com">Artzy</a> Camera is a ARKit su
 
 If you create anything, please share it on Instagram and tag <a href="https://www.instagram.com/artzyapp/">@artzyapp</a> along with the hashtag #artzy.
 
+
+# Getting Started
+Download the repo and print the three images in the "GettingStarted" folder. These are the three AR samples that come with the project.
+
+After printing, open the app and place your phone infront of the images to experience the three samples.
+
+Once you are ready to start creating - proceed to the section below.
+
 # Recommended Reading
 
 For all non-apple posts ever, please visit <a href="http://www.oscardelahera.com/blog">my blog.</a>
