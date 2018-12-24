@@ -109,7 +109,7 @@ The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* lin
 
 ## 'hand' by delasign
 
-This project features an outline of a hand give you the peace sign.
+This project features an outline of a hand that animates to show you the peace sign.
 
 For tutorials on how this was created please read the following:
 
