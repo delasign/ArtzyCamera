@@ -15,7 +15,7 @@ Download the repo and print the three images in the "GettingStarted" folder. The
 After printing, open the app and place your phone infront of the images to experience the three samples.
 
 # Ok, I want to start creating.
-I recommend reading up on AR and ARKit before becoming familiar with how the samples were created.
+I recommend reading up on AR and ARKit before becoming familiar with how the samples were created. There are found in the "HowItWasMade" folder, which includes the files that were used and the corresponding images.
 
 If you have any questions please email questions to : artzy@delasign.com
 
