@@ -58,7 +58,7 @@ For all non-apple posts ever, please visit <a href="http://www.oscardelahera.com
 
 The repository comes with three opensource AR samples:
 
-## 'local' by adamfu x delasign
+## 'local' by <a href="https://www.instagram.com/adamfu/">adamfu</a> x delasign
 
 This project features a double neon glow - the word glows in blue, whilst the halo glows in red.
 
@@ -185,7 +185,7 @@ SOFTWARE.
 
 ## Artzy Logo
 
-Created by AdamFu under the and licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+Created by <a href="https://www.instagram.com/adamfu/">AdamFu</a> under the and licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 <img src="https://camo.githubusercontent.com/70da218c8e50defea0d35ba13cd2fd8b1b068190/68747470733a2f2f63646e2e737465656d6974696d616765732e636f6d2f44516d56534837687874336e757944784e5264575542554274665231315479764c784d314631433476595735557a472f4445524543484f532e6a7067" />
 
