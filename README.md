@@ -4,7 +4,7 @@ The Opensource Artzy Camera is a ARKit starter project created by <a href="http:
 
 # Sharing is caring.
 
-If you create anything, please share it on Instagram and tag @artzyapp along with the hashtag #artzy.
+If you create anything, please share it on Instagram and tag <a href="https://www.instagram.com/artzyapp/">@artzyapp</a> along with the hashtag #artzy.
 
 # Recommended Reading
 
