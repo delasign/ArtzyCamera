@@ -61,6 +61,8 @@ For tutorials on how this was created please read the following:
 - <a href="https://developer.apple.com/documentation/scenekit/scntechnique">Apple Documentation : SCNTechnique</a>
 - <a href="https://medium.com/ar-tips-and-tricks/arkit-theory-an-introduction-to-scntechniques-710e024bc91e">ARKit Theory: Intro to SCNTechniques.</a>
 - <a href="https://medium.com/ar-tips-and-tricks/how-to-create-a-glowing-neon-effect-for-a-geometry-in-arkit-through-an-scntechnique-22c70acd5f42">How to create a glowing neon effect for a geometry in ARKit through a SCN Technique</a>
+- <a href="https://medium.com/ar-tips-and-tricks/a-scntechnique-requires-a-scn-model-filetype-b8cf01c93414">A SCNTechnique requires a .scn model</a>
+
 
 <b>Files</b>:
 
@@ -87,6 +89,7 @@ For tutorials on how this was created please read the following:
 - <a href="https://medium.com/ar-tips-and-tricks/arkit-theory-an-introduction-to-scntechniques-710e024bc91e">ARKit Theory: Intro to SCNTechniques.</a>
 - <a href="https://medium.com/ar-tips-and-tricks/how-to-create-a-glowing-neon-effect-for-a-geometry-in-arkit-through-an-scntechnique-22c70acd5f42">How to create a glowing neon effect for a geometry in ARKit through a SCN Technique</a>
 - <a href="https://medium.com/ar-tips-and-tricks/how-to-connect-custom-variables-to-scntechnique-and-associated-metal-shaders-419c6d00079f">How to connect custom variables to SCNTechniques and Associated Metal Shaders</a>
+- <a href="https://medium.com/ar-tips-and-tricks/a-scntechnique-requires-a-scn-model-filetype-b8cf01c93414">A SCNTechnique requires a .scn model</a>
 
 <b>Stroke</b>:
 The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 66 -> 92. The amount to show has to be programmed in for the camera to be able to capture it. For a non-capturable version, please read:
@@ -101,3 +104,43 @@ The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* lin
 <b>Files</b>:
 
 The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 264 -> 312, with the SCNTechnique and associated assets under the *PieceOfArtzy/SpecialEffects/Glow* folder.
+
+
+## 'Hand' by delasign
+
+This project features an outline of a hand give you the peace sign.
+
+For tutorials on how this was created please read the following:
+
+<b>Geometry</b>:
+
+- <a href="https://medium.com/ar-tips-and-tricks/how-to-use-an-adobe-illustrator-curve-in-maya-7e7f189e7ed8">How to use an Adobe Illustrator Curve in Maya.</a>
+- <a href="https://medium.com/ar-tips-and-tricks/how-to-turn-a-turn-a-simple-sketch-into-an-extruded-model-on-maya-5e9520ca5bc9">How to turn a turn a simple sketch into an extruded model on Maya</a>
+- <a href="https://medium.com/ar-tips-and-tricks/uv-mapping-how-to-convert-an-extruded-cylinders-uv-s-to-simple-layout-1c6f9c20f31">UV Mapping: How to Convert an Extruded Cylinder’s UV’s to Simple Layout</a>
+
+<b>Animation</b>:
+Please note that the key to this is to only rotate the joints.
+
+- <a href="https://medium.com/ar-tips-and-tricks/how-to-create-an-animation-in-maya-and-make-it-work-in-scenekit-or-arkit-477333e5503c">How to make an animtion in Maya that works in SceneKit or ARKit.</a>
+
+- <a href="https://www.youtube.com/watch?v=Fcl1fs7Bn_M">Maya Weight Painting Tutorial</a>
+
+<b>Files</b>:
+
+The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 41 -> 59.
+
+
+# Shader Library
+
+The current shader library includes:
+
+- Color Shader
+- Texture Shader
+- Stroke Shader
+- Backwards Stroke Shader
+- Timed Stroke Shader
+- Timed Backwards Stroke Shader
+- Fade In Color Shader
+- Fade In Texture Shader
+
+
