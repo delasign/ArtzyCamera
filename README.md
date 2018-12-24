@@ -80,7 +80,7 @@ For tutorials on how this was created please read the following:
 - <a href="https://medium.com/ar-tips-and-tricks/a-scntechnique-requires-a-scn-model-filetype-b8cf01c93414">A SCNTechnique requires a .scn model</a>
 
 
-<b>Files</b>:
+<b>Code</b>:
 
 The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 182 -> 264, with the SCNTechnique and associated assets under the *PieceOfArtzy/SpecialEffects/GlowInTwoColors* folder.
 
@@ -119,7 +119,7 @@ The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* lin
 - <a href="https://medium.com/ar-tips-and-tricks/how-to-connect-custom-variables-to-scntechnique-and-associated-metal-shaders-419c6d00079f">How to connect custom variables to SCNTechniques and Associated Metal Shaders</a>
 
 
-<b>Files</b>:
+<b>Code</b>:
 
 The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 264 -> 312, with the SCNTechnique and associated assets under the *PieceOfArtzy/SpecialEffects/Glow* folder.
 
@@ -145,7 +145,7 @@ Please note that the key to this is to only rotate the joints.
 
 - <a href="https://www.youtube.com/watch?v=Fcl1fs7Bn_M">Maya Weight Painting Tutorial</a>
 
-<b>Files</b>:
+<b>Code</b>:
 
 The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 41 -> 59.
 
