@@ -19,7 +19,7 @@ I recommend reading up on AR and ARKit before becoming familiar with how the sam
 
 If you have any questions please email questions to : artzy@delasign.com
 
-# Recommended Reading
+# Recommended reading
 
 For all non-apple posts ever, please visit <a href="http://www.oscardelahera.com/blog">my blog.</a>
 
@@ -54,7 +54,7 @@ For all non-apple posts ever, please visit <a href="http://www.oscardelahera.com
 - <a href="https://medium.com/ar-tips-and-tricks/arkit-theory-an-introduction-to-scntechniques-710e024bc91e">Intro to SCNTechniques.</a>
 
 
-# Sample Projects
+# Sample projects
 
 The repository comes with three opensource AR samples:
 
@@ -144,7 +144,7 @@ Please note that the key to this is to only rotate the joints.
 The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 41 -> 59.
 
 
-# Shader Library
+# Shader library
 If you are new to Shaders please read this: <a href="https://medium.com/ar-tips-and-tricks/arkit-theory-vertices-metal-shaders-uv-mapping-and-scnprograms-445e9fc4c53f">Vertices, Metal Shaders, UV Mapping and SCNProgram’s.</a>
 
 The current shader library can be found in *PieceOfArtzy/Shaders* and includes:
