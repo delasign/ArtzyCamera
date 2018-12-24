@@ -9,20 +9,30 @@ For all non-apple posts ever, please visit <a href="http://www.oscardelahera.com
 <b>Apple Documentation</b>:
 
 <a href="https://developer.apple.com/documentation/arkit">ARKit</a>
+
 <a href="https://developer.apple.com/documentation/arkit/building_your_first_ar_experience">Building your first ARKit Experience</a>
 
+
 <a href="https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration">AR World Tracking Configuration</a>
+
 <a href="https://developer.apple.com/documentation/arkit/understanding_world_tracking_in_arkit">Understanding World Tracking in ARKit</a>
 
 <a href="https://developer.apple.com/documentation/arkit/arreferenceimage">ARReferenceImages</a>
+
 <a href="https://developer.apple.com/documentation/arkit/arimageanchor">ARImageAnchor</a>
+
 <a href="https://developer.apple.com/documentation/arkit/recognizing_images_in_an_ar_experience">Recognizing Images in an AR Experience</a>
 
+
 <a href="https://developer.apple.com/documentation/arkit/arframe">ARFrame</a>
+
 <a href="https://developer.apple.com/documentation/arkit/arcamera">ARCamera</a>
 
+
 <a href="https://developer.apple.com/documentation/scenekit">SceneKit</a>
+
 <a href="https://developer.apple.com/documentation/scnnode">SCNNode</a>
+
 <a href="https://developer.apple.com/documentation/scenekit/scntechnique">SCNTechnique</a>
 
 <b>ARKit Theory</b>:
