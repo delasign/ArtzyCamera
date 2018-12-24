@@ -1,12 +1,46 @@
 # Opensource Artzy Camera
 
-The Opensource Artzy Camera is a ARKit starter project that features an AR Camera and Video Recorder, to allow you to capture and share the content that you create.
+The Opensource Artzy Camera is a ARKit starter project created by Delasign that features an AR Camera and Video Recorder, to allow you to capture and share the content that you create.
 
 The project contains an AR Video recorder, 3 AR samples, a library of free metal shaders and special effects, illustrator files and maya files.
 
+# Recommended Reading
+
+For all non-apple posts ever, please visit <a href="http://www.oscardelahera.com/blog">my blog.</a>
+
+<b>Apple Documentation</b>:
+
+<a href="https://developer.apple.com/documentation/arkit">ARKit</a>
+<a href="https://developer.apple.com/documentation/arkit/building_your_first_ar_experience">Building your first ARKit Experience</a>
+
+<a href="https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration">AR World Tracking Configuration</a>
+<a href="https://developer.apple.com/documentation/arkit/understanding_world_tracking_in_arkit">Understanding World Tracking in ARKit</a>
+
+<a href="https://developer.apple.com/documentation/arkit/arreferenceimage">ARReferenceImages</a>
+<a href="https://developer.apple.com/documentation/arkit/arimageanchor">ARImageAnchor</a>
+<a href="https://developer.apple.com/documentation/arkit/recognizing_images_in_an_ar_experience">Recognizing Images in an AR Experience</a>
+
+<a href="https://developer.apple.com/documentation/arkit/arframe">ARFrame</a>
+<a href="https://developer.apple.com/documentation/arkit/arcamera">ARCamera</a>
+
+<a href="https://developer.apple.com/documentation/scenekit">SceneKit</a>
+<a href="https://developer.apple.com/documentation/scnnode">SCNNode</a>
+<a href="https://developer.apple.com/documentation/scenekit/scntechnique">SCNTechnique</a>
+
+<b>ARKit Theory</b>:
+
+<a href="https://medium.com/ar-tips-and-tricks/arkit-theory-the-point-cloud-image-recognition-ar-ready-images-true-scale-the-renderer-and-e1508398dd4">The Point Cloud, Image Recognition, AR Ready Images, True Scale, The Renderer and Nodes</a>
+
+<a href="https://medium.com/ar-tips-and-tricks/arkit-theory-vertices-metal-shaders-uv-mapping-and-scnprograms-445e9fc4c53f">Vertices, Metal Shaders, UV Mapping and SCNProgram’s.</a>
+
+<a href="https://medium.com/ar-tips-and-tricks/arkit-theory-arcamera-point-of-view-81e1fe7088e5">ARCamera POV.</a>
+
+<a href="https://medium.com/ar-tips-and-tricks/arkit-theory-an-introduction-to-scntechniques-710e024bc91e">Intro to SCNTechniques.</a>
+
+
 # Sample Projects
 
-The repository comes with three opensource AR samples, 
+The repository comes with three opensource AR samples:
 
 ## 'local' by adamfu x delasign
 
