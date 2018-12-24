@@ -131,6 +131,7 @@ The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* lin
 
 
 # Shader Library
+If you are new to Shaders please read this: <a href="https://medium.com/ar-tips-and-tricks/arkit-theory-vertices-metal-shaders-uv-mapping-and-scnprograms-445e9fc4c53f">Vertices, Metal Shaders, UV Mapping and SCNProgram’s.</a>
 
 The current shader library can be found in *PieceOfArtzy/Shaders* and includes:
 
