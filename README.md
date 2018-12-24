@@ -107,7 +107,7 @@ The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* lin
 The key parts to this working are found in *PieceOfArtzy/PieceOfArtzy.swift* line 264 -> 312, with the SCNTechnique and associated assets under the *PieceOfArtzy/SpecialEffects/Glow* folder.
 
 
-## 'Hand' by delasign
+## 'hand' by delasign
 
 This project features an outline of a hand give you the peace sign.
 
